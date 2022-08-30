@@ -1,0 +1,24 @@
+Package: fplBuddy
+Title: fplBuddy
+Version: 0.1.0
+Author: James Abrams
+Maintainer: James Abrams <james.abrams@hmcm.co.uk>
+Description: Analysis of latest FPL data to make informed decisions about team selections
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Depends: 
+    R (>= 2.10)
+LazyData: true
+Imports: 
+    dplyr,
+    devtools,
+    fuzzyjoin,
+    Rglpk,
+    rvest,
+    fplr,
+    fplscrapR
+Remotes: 
+    ewenme/fplr,
+    wiscostret/fplscrapR
