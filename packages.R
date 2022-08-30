@@ -22,6 +22,7 @@ library(fplscrapR)
 #usethis::use_package("fplscrapR")
 
 
+
 ####################################################################
 
 devtools::document()
@@ -48,16 +49,16 @@ odds_cs_gw5 <- fpl_odds_generator_cs(url, xpath)
 
 #usethis::use_data(fpl_historical_data, overwrite = T)
 
-all_gameweeks_21_22 <- fpl_load_historic_data() 
+all_gameweeks_21_22 <- fpl_load_historic_data()
 
 period <- fpl_fixtures(5, 5)
 #fpl_fixtures_difficulty_rating(5, 5)
-  
 
 
 
-players_index <- fplBuddy::fpl_calculate_predictors(period, weight = 0.5, strength_index = 1, gw = 5, 
-                                   odds_gs_gw5, odds_cs_gw5)
+
+players_index <- fplBuddy::fpl_calculate_predictors(period, weight = 0.5, strength_index = 1, gw = 5,
+                                                    odds_gs_gw5, odds_cs_gw5)
 
 
 
