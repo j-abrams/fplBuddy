@@ -18,7 +18,7 @@ library(fplscrapR)
 #usethis::use_package("fplscrapR")
 
 
-devtools::install_github("j-abrams/fplBuddy", force = T)
+#devtools::install_github("j-abrams/fplBuddy", force = T)
 library(fplBuddy)
 
 

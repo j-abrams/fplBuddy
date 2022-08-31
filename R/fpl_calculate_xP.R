@@ -42,8 +42,9 @@ fpl_calculate_xP <- function(data = players_index, predictors = predictors_odds,
     distinct() %>%
     ungroup()
 
+  gw <- fpl_get_gameweek_current()[[1]] - 1
 
-  my_team <- fpl_my_team(user, squad = 11, gw = 4)
+  my_team <- fpl_my_team(user, squad = 11)
 
   # Join with "my_team" to identify which players are in my team.
   players_xP <- players_collated %>%

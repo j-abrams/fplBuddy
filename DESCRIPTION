@@ -7,7 +7,7 @@ Description: Analysis of latest FPL data to make informed decisions about team s
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.1
 Depends: 
     R (>= 2.10)
 LazyData: true
