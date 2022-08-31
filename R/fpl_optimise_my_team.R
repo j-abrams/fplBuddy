@@ -14,6 +14,8 @@
 #'
 #' @param budget total funds available to spend on first 11 players
 #'
+#' @return Solution to optimisation problem.
+#'
 #' @export
 
 # fpl_optimise_my_team()
@@ -80,7 +82,8 @@ fpl_optimise_my_team <- function(input, obj_var, budget = 83, transfers = 2) {
   sol_final <-
     cbind(input,
           as.data.frame(sol$solution)) %>%
-    filter(sol$solution == 1)
+    filter(sol$solution == 1) %>%
+    select(-sol$solution)
 
 
   return(sol_final)

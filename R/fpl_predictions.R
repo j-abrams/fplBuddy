@@ -11,6 +11,8 @@
 #'
 #' @param predictors predict based on either the odds or index methods
 #'
+#' @return Regression model outputs.
+#'
 #' @export
 
 

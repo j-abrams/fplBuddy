@@ -8,7 +8,7 @@
 #'
 #' @param gameweek2 Period end date.
 #'
-#' @examples
+#' @return Dataframe.
 #'
 #' @export
 

@@ -6,6 +6,9 @@
 \usage{
 fpl_load_historic_data()
 }
+\value{
+Dataframe.
+}
 \description{
 This data offers a gameweek by gameweek breakdown of fields such as total_points, ICT score, etc.
 }

@@ -4,7 +4,11 @@
 
 #' Return the odds for each player to score or register an assist for the next gameweek.
 #'
+#' Navigate to fantasyfootballpundit to find the latest odds for this week.
+#'
 #' @param data Latest odds data for likelihood of scoring and assisting - gw5 at the time of writing
+#'
+#' @return Dataframe.
 #'
 #' @export
 
@@ -74,6 +78,21 @@ fpl_odds_generator_gs <- function(data = odds_gs_gw5) {
 
   return(odds_gw)
 }
+
+
+
+# Extension
+# Access google sheets doc programmatically
+
+# test <- read_html(
+#   "https://www.fantasyfootballpundit.com/premier-league-goalscorer-assist-odds/#Premier-League-Anytime-Goalscorer-Odds") %>%
+#   html_nodes(xpath = '//*[@id="post-15823"]/div/script[9]')
+#
+# x <- as.character(test[1][1])
+#
+# paste0("https", sub('.*https', "", sub('csv.*', "", x)), "csv")
+
+
 
 
 

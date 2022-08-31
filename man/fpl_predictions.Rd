@@ -13,6 +13,9 @@ fpl_predictions(data, split_val = 0.9, predictors = everything())
 
 \item{predictors}{predict based on either the odds or index methods}
 }
+\value{
+Regression model outputs.
+}
 \description{
 Split data into a testing and training set to carry out machine learning techniques / regression modelling
 }

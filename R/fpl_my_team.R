@@ -3,13 +3,13 @@
 
 #' Return a list containing all players selected in your team
 #'
-#' Converts fields such as average points, ict rating etc. into usable indexes for generating predicted points
+#' Nested within "fpl_calculate_xP" to produce the variable "in_my_team"
 #'
 #' @param user Unique identifier
 #'
 #' @param squad Either 11 or 15, depending on whether to select all team including or excluding subs
 #'
-#' @param gw Numeric value, should be set to the most recently passed gameweek (gw4 at time of writing)S
+#' @return List.
 #'
 #' @export
 
@@ -17,7 +17,9 @@
 # fpl_get_my_team()
 
 # Return list of players in your team - this function is used as an input elsewhere also
-fpl_my_team <- function(user, squad = 11, gw = 4) {
+fpl_my_team <- function(user, squad = 11) {
+
+  gw <- fplr::fpl_get_gameweek_current()$id - 1
 
   # Find team like this
   # Just need to find player id (visit "pick team", then "view gameweek history")
@@ -35,7 +37,9 @@ fpl_my_team <- function(user, squad = 11, gw = 4) {
 
 # Function to Work out funds user has at their disposal right now
 # Assume benched players are static - although in practice this may be false.
-fpl_my_budget <- function(user, players_collated_final, gw = 4) {
+fpl_my_budget <- function(user, players_collated_final) {
+
+  gw <- fplr::fpl_get_gameweek_current()$id - 1
 
   # Initial budget
   budget <- fplscrapR::get_entry(user)$last_deadline_value / 10

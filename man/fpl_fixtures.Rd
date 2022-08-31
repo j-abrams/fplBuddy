@@ -2,7 +2,7 @@
 % Please edit documentation in R/fpl_fixtures.R
 \name{fpl_fixtures}
 \alias{fpl_fixtures}
-\title{Return a list of all fixtures coming up between a start and end date.}
+\title{Return a dataframe containing all fixtures coming up between a start and end date.}
 \usage{
 fpl_fixtures(gameweek1, gameweek2)
 }
@@ -11,6 +11,9 @@ fpl_fixtures(gameweek1, gameweek2)
 
 \item{gameweek2}{Period end date.}
 }
+\value{
+Dataframe
+}
 \description{
-Denotes home and away team strength for each fixture.
+Denotes home and away team strength for each team in each fixture.
 }

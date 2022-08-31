@@ -15,6 +15,9 @@ fpl_optimise_my_team(input, obj_var, budget = 83, transfers = 2)
 
 \item{transfers}{Number of free transfers available to the user}
 }
+\value{
+Solution to optimisation problem.
+}
 \description{
 Transfers argument is flexible to denote how many changes can be made this week
 }

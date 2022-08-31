@@ -4,15 +4,16 @@
 \alias{fpl_my_team}
 \title{Return a list containing all players selected in your team}
 \usage{
-fpl_my_team(user, squad = 11, gw = 4)
+fpl_my_team(user, squad = 11)
 }
 \arguments{
 \item{user}{Unique identifier}
 
 \item{squad}{Either 11 or 15, depending on whether to select all team including or excluding subs}
-
-\item{gw}{Numeric value, should be set to the most recently passed gameweek (gw4 at time of writing)S}
+}
+\value{
+List.
 }
 \description{
-Converts fields such as average points, ict rating etc. into usable indexes for generating predicted points
+Nested within "fpl_calculate_xP" to produce the variable "in_my_team"
 }

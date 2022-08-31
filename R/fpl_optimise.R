@@ -13,6 +13,8 @@
 #'
 #' @param budget total funds available to spend on first 11 players
 #'
+#' @return Solution to optimisation problem.
+#'
 #' @export
 
 

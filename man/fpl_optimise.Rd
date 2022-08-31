@@ -13,6 +13,9 @@ fpl_optimise(input = players_xP, obj_var = players_xP$xP, budget = 83)
 
 \item{budget}{total funds available to spend on first 11 players}
 }
+\value{
+Solution to optimisation problem.
+}
 \description{
 Constraints are applicable for positions, team, budget, etc.
 }

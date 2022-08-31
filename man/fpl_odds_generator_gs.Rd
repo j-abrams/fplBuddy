@@ -9,6 +9,9 @@ fpl_odds_generator_gs(data = odds_gs_gw5)
 \arguments{
 \item{data}{Latest odds data for likelihood of scoring and assisting - gw5 at the time of writing}
 }
+\value{
+Dataframe.
+}
 \description{
-Return the odds for each player to score or register an assist for the next gameweek.
+Navigate to fantasyfootballpundit to find the latest odds for this week.
 }

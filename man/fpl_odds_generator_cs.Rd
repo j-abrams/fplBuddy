@@ -4,13 +4,11 @@
 \alias{fpl_odds_generator_cs}
 \title{Return the odds for each team to keep a cleansheet for the next gameweek.}
 \usage{
-fpl_odds_generator_cs(url, xpath)
+fpl_odds_generator_cs()
 }
-\arguments{
-\item{url}{Web link where odds table is scraped from}
-
-\item{xpath}{Unique identifier for the clean sheet probability table}
+\value{
+Dataframe containing clean sheet odds.
 }
 \description{
-Return the odds for each team to keep a cleansheet for the next gameweek.
+Table is updated each week when new clean sheet odds become available.
 }

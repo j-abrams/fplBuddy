@@ -6,6 +6,8 @@
 #'
 #' This data offers a gameweek by gameweek breakdown of fields such as total_points, ICT score, etc.
 #'
+#' @return Dataframe.
+#'
 #' @export
 
 

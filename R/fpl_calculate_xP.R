@@ -11,7 +11,7 @@
 #'
 #' @param predictors select which variables to use as predicting variables - either odds or indexes
 #'
-#' @return Factor variable.
+#' @return Dataframe.
 #'
 #' @export
 

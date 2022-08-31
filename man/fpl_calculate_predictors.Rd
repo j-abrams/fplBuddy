@@ -8,7 +8,6 @@ fpl_calculate_predictors(
   period,
   weight = 0.5,
   strength_index = 1,
-  gw = 5,
   odds_gs = odds_gs_gw4,
   odds_cs = odds_cs_gw4
 )
@@ -20,14 +19,12 @@ fpl_calculate_predictors(
 
 \item{strength_index}{"Low", "Med" or "High" to define influence fixtures have on our expected points.}
 
-\item{gw}{Current gameweek.}
-
 \item{odds_gs}{Goalscoring and Assists odds for current week.}
 
 \item{odds_cs}{Odds for each team to keep a clean sheet this week.}
 }
 \value{
-Factor variable.
+Dataframe
 }
 \description{
 Converts fields such as average points, ict rating etc. into usable indexes for generating predicted points

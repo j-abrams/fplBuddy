@@ -12,7 +12,7 @@ fpl_calculate_xP(data = players_index, predictors = predictors_odds, user)
 \item{predictors}{select which variables to use as predicting variables - either odds or indexes}
 }
 \value{
-Factor variable.
+Dataframe.
 }
 \description{
 Two separate methods - use odds data, or use other indexes (average points, ict index etc.)

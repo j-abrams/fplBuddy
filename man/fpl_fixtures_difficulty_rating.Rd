@@ -11,9 +11,9 @@ fpl_fixtures_difficulty_rating(gameweek1, gameweek2)
 
 \item{gameweek2}{Period end date.}
 }
+\value{
+Dataframe.
+}
 \description{
 Investigate which teams have the easiest and hardest run of fixtures coming up.
-}
-\examples{
-
 }

@@ -4,9 +4,9 @@
 
 #' Return the odds for each team to keep a cleansheet for the next gameweek.
 #'
-#' @param url Web link where odds table is scraped from
+#' Table is updated each week when new clean sheet odds become available.
 #'
-#' @param xpath Unique identifier for the clean sheet probability table
+#' @return Dataframe containing clean sheet odds.
 #'
 #' @export
 
@@ -17,7 +17,11 @@
 # Two argument - url - website address, and
 # xpath - unique identifier for clean sheet table
 
-fpl_odds_generator_cs <- function(url, xpath) {
+fpl_odds_generator_cs <- function() {
+
+  url <- "https://www.fantasyfootballreports.com/premier-league-clean-sheet-odds/"
+  xpath <- '//*[@id="tablepress-166"]'
+
 
   odds <- read_html(url) %>%
     html_nodes(xpath = xpath) %>%
@@ -34,12 +38,12 @@ fpl_odds_generator_cs <- function(url, xpath) {
       Team == "Nottingham" ~ "Nott'm Forest",
       Team == "Brigton" ~ "Brighton",
 
+      # Teams displayed in different formats some weeks.
+      # Annoying as this means we need to update the names manually
       Team == "Manch.City" ~ "Man City",
       Team == "Cr.Palace" ~ "Crystal Palace",
       Team == "Wolverhampton" ~ "Wolves",
       Team == "Manch.Utd." ~ "Man Utd",
-
-
       TRUE ~ Team))
 
   return(clean_sheet_odds)
@@ -47,7 +51,9 @@ fpl_odds_generator_cs <- function(url, xpath) {
 
 
 
+# Extension
 # Access google sheets doc programmatically
+
 # test <- read_html(
 #   "https://www.fantasyfootballpundit.com/premier-league-goalscorer-assist-odds/#Premier-League-Anytime-Goalscorer-Odds") %>%
 #   html_nodes(xpath = '//*[@id="post-15823"]/div/script[9]')

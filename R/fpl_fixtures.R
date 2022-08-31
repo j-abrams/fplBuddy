@@ -1,12 +1,14 @@
 
 
-#' Return a list of all fixtures coming up between a start and end date.
+#' Return a dataframe containing all fixtures coming up between a start and end date.
 #'
-#' Denotes home and away team strength for each fixture.
+#' Denotes home and away team strength for each team in each fixture.
 #'
 #' @param gameweek1 Period start date.
 #'
 #' @param gameweek2 Period end date.
+#'
+#' @return Dataframe
 #'
 #' @export
 
