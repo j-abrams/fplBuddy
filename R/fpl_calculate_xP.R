@@ -24,7 +24,7 @@
 # Test:
 # train = all_gameweeks
 
-fpl_calculate_xP <- function(data = players_index, predictors = predictors_odds, user) {
+fpl_calculate_xP <- function(data = players_index, predictors = predictors_odds, user, gw = 5) {
 
   # Calculate expected points for the period (xP) - Using historical model
   model <- lm(total_points ~ ., data = fpl_historical_data_final %>% select(predictors))
@@ -32,6 +32,9 @@ fpl_calculate_xP <- function(data = players_index, predictors = predictors_odds,
 
   # Take a look at residuals and r squared
   print(summary(model))
+
+  players_collated2 <- data %>%
+    mutate(p = round(p, 2))
 
   # save p as a new coloumn in players_collated_final
   players_collated <- data %>%
@@ -42,13 +45,14 @@ fpl_calculate_xP <- function(data = players_index, predictors = predictors_odds,
     distinct() %>%
     ungroup()
 
-  gw <- fpl_get_gameweek_current()[[1]] - 1
+  gw <- gw - 1
 
   my_team <- fpl_my_team(user, squad = 11)
 
   # Join with "my_team" to identify which players are in my team.
   players_xP <- players_collated %>%
-    mutate(in_my_team = ifelse(name %in% my_team, 1, 0))
+    mutate(in_my_team = ifelse(name %in% my_team, 1, 0)) %>%
+    filter(!is.na(xP))
 
   return(players_xP)
 }

@@ -40,6 +40,8 @@ devtools::document()
 # Goals, assists and clean sheets
 odds_gs_gw5 <- fplBuddy::fpl_odds_generator_gs(odds_gs_gw5)
 odds_cs_gw5 <- fplBuddy::fpl_odds_generator_cs()
+odds_cs_gw5 <- fplBuddy::odds_cs_gw5
+
 
 #fpl_load_historic_data()
 #fpl_fixtures_difficulty_rating()
@@ -50,24 +52,26 @@ period <- fplBuddy::fpl_fixtures(5, 5)
 fplBuddy::fpl_fixtures_difficulty_rating(5, 5)
 
 
+
+players <- fpl_get_player_all()
+
 #weight = 0.5, strength_index = 1
-players_index <-
-  fplBuddy::fpl_calculate_predictors(period, odds_gs = odds_gs_gw5, odds_cs = odds_cs_gw5)
+players_index <- fplBuddy::fpl_calculate_predictors(players, period, gw = 4,
+                                                    odds_gs = odds_gs_gw5,
+                                                    odds_cs = odds_cs_gw5)
 
 
 # user unique id
 user <- "6238967"
 
 #odds
-players_xP <- fplBuddy::fpl_calculate_xP(players_index, predictors_odds, user)
+players_xP <- fplBuddy::fpl_calculate_xP(players_index, predictors_odds, user, gw = 4)
 sum(players_xP$xP)
 
-#indexes
-players_xP2 <- fplBuddy::fpl_calculate_xP(players_index, predictors_indexes, user)
-sum(players_xP2$xP)
 
 
-sol <- fpl_optimise(players_xP, players_xP$xP, budget = 83.6)
+
+sol <- fplBuddy::fpl_optimise(players_xP, players_xP$xP, budget = 100)
 
 
 # Budget
@@ -87,4 +91,10 @@ for (i in unlist(my_team)) {
     print(i)
   }
 }
+
+
+
+
+
+
 

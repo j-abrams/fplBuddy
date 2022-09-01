@@ -4,7 +4,12 @@
 \alias{fpl_calculate_xP}
 \title{Calculate expected points for each player}
 \usage{
-fpl_calculate_xP(data = players_index, predictors = predictors_odds, user)
+fpl_calculate_xP(
+  data = players_index,
+  predictors = predictors_odds,
+  user,
+  gw = 5
+)
 }
 \arguments{
 \item{data}{Output from "fpl_calculate_predictors" function used as the initial starting point}

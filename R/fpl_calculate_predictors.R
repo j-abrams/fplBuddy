@@ -37,11 +37,12 @@
 # odds_gs = odds_gs_gw5
 # odds_cs = odds_cs_gw5
 
-fpl_calculate_predictors <- function(period, weight = 0.5, strength_index = 1, odds_gs = odds_gs_gw4, odds_cs = odds_cs_gw4) {
+fpl_calculate_predictors <- function(players = players, gw = 5,
+                                     period, weight = 0.5, strength_index = 1, odds_gs = odds_gs_gw4, odds_cs = odds_cs_gw4) {
 
   # gw is used as a conversion for total points scored so far - to average points per gw
   # Therefore for gw 4, we want to divide total points by number of gameweeks completed so far: 3
-  gw <- fplr::fpl_get_gameweek_current()$id - 1
+  gw <- gw - 1
 
   # Data preparation
   last_season_index <- fpl_historical_performance_data
@@ -50,8 +51,6 @@ fpl_calculate_predictors <- function(period, weight = 0.5, strength_index = 1, o
   # Coefficient Used later for scaling in accordance with round01 standardisation function
   odds_cs_max <- max(odds_cs$clean_sheet_odds)
 
-  # function from fplr package - return data on all 593 current players - Now 606 as of latest count
-  players <- fpl_get_player_all()
 
   # Data wrangling
   players_collated <- players %>%
