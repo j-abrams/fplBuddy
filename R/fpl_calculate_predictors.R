@@ -33,11 +33,11 @@
 # Testing
 # weight = 0.5
 # strength_index = 1
-# gw = 5
+# gw = 6
 # odds_gs = odds_gs_gw5
 # odds_cs = odds_cs_gw5
 
-fpl_calculate_predictors <- function(players = players, gw = 5,
+fpl_calculate_predictors <- function(players = players, gw,
                                      period, weight = 0.5, strength_index = 1, odds_gs = odds_gs_gw4, odds_cs = odds_cs_gw4) {
 
   # gw is used as a conversion for total points scored so far - to average points per gw
@@ -127,10 +127,21 @@ fpl_calculate_predictors <- function(players = players, gw = 5,
 
     # Combine with latest odds data here
     # solution using str_convert to get a better match
-    mutate(second_name = str_convert(second_name)) %>%
+    mutate(second_name = str_convert(second_name))
+
+  players_collated2 <- players_collated %>%
     #mutate(name = str_convert(name)) %>%
     left_join(odds_gs, by = c("second_name" = "Name")) %>%
     left_join(odds_cs, by = c("team" = "Team")) %>%
+
+
+    # Hot fix - remove duplicated names - just not working atm - 638 down to 593 names
+    group_by(second_name) %>%
+    filter(james_points_index == max(james_points_index)) %>%
+    ungroup() %>%
+
+    mutate(AnytimeGoal = ifelse(is.na(AnytimeGoal), 0, as.numeric(sub("%", "", AnytimeGoal)))) %>%
+    mutate(AnytimeAssist = ifelse(is.na(AnytimeAssist), 0, as.numeric(sub("%", "", AnytimeAssist)))) %>%
 
     # Standardise
     # Fix goals
@@ -175,6 +186,7 @@ fpl_calculate_predictors <- function(players = players, gw = 5,
                TRUE ~ 0
              )
            ) %>%
+    distinct() %>%
 
     # HOT FIX - 2 ben davies in the listings. One plays for spurs, the other for liverpool
     # Fuck off ben davies
@@ -206,7 +218,7 @@ fpl_calculate_predictors <- function(players = players, gw = 5,
   # Fixed this by scaling odds index relative to minutes played
 
 
-  return(players_collated)
+  return(players_collated2)
 
 }
 

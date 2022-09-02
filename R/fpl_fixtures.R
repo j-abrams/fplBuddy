@@ -24,6 +24,9 @@
 #
 # Rate fixtures difficulty between two selected gameweeks.
 
+# gameweek1 <- 6
+# gameweek2 <- 7
+
 fpl_fixtures <- function(gameweek1, gameweek2) {
 
   # Team data acquired via fplr package
@@ -37,6 +40,7 @@ fpl_fixtures <- function(gameweek1, gameweek2) {
     left_join(teams, by = c("team_h" = "id")) %>%
     left_join(teams, by = c("team_a" = "id")) %>%
     select("gameweek" = "event",
+           kickoff_time,
            team_h,
            team_a,
            "team_h_name" = "name.x",
@@ -48,7 +52,7 @@ fpl_fixtures <- function(gameweek1, gameweek2) {
 
   # Filter subject to user selected gameweek arguments
   fixtures_x_weeks <- fixtures %>%
-    filter(gameweek %in% c(gameweek1:gameweek2))
+    filter(gameweek %in% c((gameweek1 - 1):gameweek2))
 
   # Initialisation before commencing loop operation
   fixtures_all <- NULL
@@ -68,7 +72,8 @@ fpl_fixtures <- function(gameweek1, gameweek2) {
              opponent_difficulty = case_when(
                team_h_name == i ~ team_h_difficulty,
                team_a_name == i ~ team_a_difficulty)) %>%
-      select(gameweek, team, opponent, opponent_difficulty, was_home, strength_overall_home, strength_overall_away)
+      select(gameweek, team, opponent, opponent_difficulty,
+             was_home, strength_overall_home, strength_overall_away, kickoff_time)
 
     fixtures_all <- rbind(fixtures_all, fixtures_temp)
   }
@@ -78,11 +83,19 @@ fpl_fixtures <- function(gameweek1, gameweek2) {
     left_join(teams, by = c("team" = "name")) %>%
     select(-opponent_difficulty, -strength, -strength_overall_home.y, -strength_overall_away.y) %>%
     dplyr::rename(strength_overall_home = strength_overall_home.x,
-                  strength_overall_away = strength_overall_away.x)
+                  strength_overall_away = strength_overall_away.x) %>%
 
-
+    group_by(team) %>%
+    mutate(next_match =
+             as.numeric(as.Date(max(kickoff_time)) - as.Date(shift(kickoff_time)))) %>%
+    mutate(next_match = ifelse(is.na(next_match), 0, next_match)) %>%
+    filter(next_match != 0) %>%
+    mutate(next_match = sum(next_match)) %>%
+    select(-kickoff_time)
 
   return(fixtures_all_2)
+
 }
+
 
 

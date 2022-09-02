@@ -24,9 +24,13 @@
 # Extra constraint is coded in subject to transfers argument.
 # Budget assumption - bench players x 4 cost 17, leaving 83 budget for starting 11...
 
+# input <- players_xP
+# obj_var <- players_xP$xP
+
+
 fpl_optimise_my_team <- function(input, obj_var, budget = 83, transfers = 2) {
 
-  num.players <- length(input[1])
+  num.players <- nrow(input[1])
 
   obj <- obj_var
 
@@ -62,7 +66,6 @@ fpl_optimise_my_team <- function(input, obj_var, budget = 83, transfers = 2) {
 
   rhs <- c(
     rhs,
-
     11 - transfers,
     nrow(filter(input, in_my_team == 1, position == "DEF")),
     nrow(filter(input, in_my_team == 1, position == "MID")),
@@ -82,8 +85,7 @@ fpl_optimise_my_team <- function(input, obj_var, budget = 83, transfers = 2) {
   sol_final <-
     cbind(input,
           as.data.frame(sol$solution)) %>%
-    filter(sol$solution == 1) %>%
-    select(-sol$solution)
+    filter(sol$solution == 1)
 
 
   return(sol_final)

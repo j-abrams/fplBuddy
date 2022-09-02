@@ -6,7 +6,7 @@
 \usage{
 fpl_calculate_predictors(
   players = players,
-  gw = 5,
+  gw,
   period,
   weight = 0.5,
   strength_index = 1,

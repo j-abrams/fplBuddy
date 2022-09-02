@@ -24,10 +24,19 @@
 # Test:
 # train = all_gameweeks
 
-fpl_calculate_xP <- function(data = players_index, predictors = predictors_odds, user, gw = 5) {
+
+# TODO: investigate whether we can get better predictions by ignoring lower scoring players
+# fpl_historical_data_final2 <- fplBuddy::fpl_historical_data_final %>%
+#   group_by(name) %>%
+#   arrange(desc(total_points)) %>%
+#   head(16000)
+
+
+fpl_calculate_xP <- function(data = players_index, predictors = predictors_indexes,
+                             user, gw = 5) {
 
   # Calculate expected points for the period (xP) - Using historical model
-  model <- lm(total_points ~ ., data = fpl_historical_data_final %>% select(predictors))
+  model <- lm(total_points ~ ., data = fplBuddy::fpl_historical_data_final %>% select(predictors))
   p <- predict(model, data)
 
   # Take a look at residuals and r squared
@@ -56,4 +65,3 @@ fpl_calculate_xP <- function(data = players_index, predictors = predictors_odds,
 
   return(players_xP)
 }
-
