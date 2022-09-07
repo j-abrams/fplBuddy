@@ -3,13 +3,6 @@
 
 # Tomorrow ----
 
-# TODO: Write a function to do this automatically tomorrow.
-# TODO: Monitor predictions vs actual observed scores
-# TODO: Pull in odds data for gw 6
-# TODO: Try to move data around in the package to hide from user...
-# TODO: Write function to retrieve archived odds and clean sheet data for gameweek, a user specified argument
-# TODO: Investigate budget ~ relationship with now_cost -
-
 # Sell price seems to be available from fpl api data
 
 # Concerned about the duplicated names. Might try to join on player id in future.
@@ -21,7 +14,7 @@
 
 # Enter these vals for GAMEWEEK 6
 # Items specified in "gameweeks" are weeks for which we already have the data
-gameweeks <- list("gw1", "gw2", "gw3", "gw4", "gw5")
+gameweeks <- list("gw1", "gw2", "gw3", "gw4", "gw5", "gw6")
 player_details <- fplscrapR::get_player_details()
 
 fpl_gameweek_points <- function(player_details = player_details, gameweeks = gameweeks) {
@@ -106,56 +99,57 @@ write.csv(gw4_players_xP_odds,  "data/Previous week predictions/gw4_players_xP_o
 write.csv(gw5_players_xp, "gw5_predictions_actuals.csv")
 
 
+
+
+
+
+
 #####################################################
 
 # Comparisons ----
+
+# For monitoring purposes
+# Take a look at how odds and index predictions shape up against actual recored points.
+# Odds is approx 60% accurate, index approx 50%
+
+fpl_performance_comparison <- function(gw = "gw4") {
+
+  # Prep for join
+  gameweek <- eval(parse(text = gw)) %>%
+    mutate(name = str_convert(name))
+
+  # Define filenames to be read in using paste0 function and gw argument
+  filename  <- paste0("data/Previous week predictions/", gw, "_players_xP_odds.csv")
+  filename2 <- paste0("data/Previous week predictions/", gw, "_players_xP_index.csv")
+
+  # Employ dplyr full_joins to pull predictions and actuals together
+  gameweek_players_xp <- read.csv(filename) %>%
+    full_join(read.csv(filename2), by = "name") %>%
+    mutate(name = str_convert(name)) %>%
+    full_join(gameweek, by = "name") %>%
+    select(-ict_index) %>%
+    select(name, "xP_odds" = "xP.x", "xP_index" = "xP.y", total_points) %>%
+    filter(!is.na(total_points) & !is.na(xP_index))
+
+  # Correlations - Odds prediction method
+  print(paste(gw, "Correlation - Total Points Vs. odds:",
+              round(cor(gameweek_players_xp$xP_odds, gameweek_players_xp$total_points), 3)))
+
+  # Correlations - Index prediction method
+  print(paste(gw, "Correlation - Total Points Vs. index:",
+              round(cor(gameweek_players_xp$xP_index, gameweek_players_xp$total_points), 3)))
+
+  return(gameweek_players_xp)
+}
+
+
 # gw4
+gw4_players_xp <- fpl_performance_comparison(gw = "gw4")
 
-
-gw4 <- gw4 %>%
-  mutate(name = str_convert(name))
-
-gw4_players_xp <- read.csv("data/Previous week predictions/gw4_players_xP_odds.csv") %>%
-  full_join(read.csv("data/Previous week predictions/gw4_players_xP_index.csv"), by = "name") %>%
-  mutate(name = str_convert(name)) %>%
-  full_join(gw4, by = "name") %>%
-  select(-ict_index) %>%
-  select(name, "xP_odds" = "xP.x", "xP_index" = "xP.y", total_points) %>%
-  filter(!is.na(total_points) & !is.na(xP_index))
-
-
-# Correlations
-cor(gw4_players_xp$xP_odds, gw4_players_xp$total_points)
-cor(gw4_players_xp$xP_index, gw4_players_xp$total_points)
-
-# Odds metric vs Index metric correlation? Pretty high
-cor(gw4_players_xp$xP_index, gw4_players_xp$xP_odds)
-
-
-
-
-
-##########################################################################
 # gw5
+gw5_players_xp <- fpl_performance_comparison(gw = "gw5")
 
-gw5 <- gw5 %>%
-  mutate(name = str_convert(name))
-
-gw5_players_xp <- read.csv("data/Previous week predictions/gw5_players_xP_odds.csv") %>%
-  full_join(read.csv("data/Previous week predictions/gw5_players_xP_index.csv"), by = "name") %>%
-  mutate(name = str_convert(name)) %>%
-  full_join(gw5, by = "name") %>%
-  select(-ict_index) %>%
-  select(name, "xP_odds" = "xP.x", "xP_index" = "xP.y", total_points) %>%
-  filter(!is.na(total_points) & !is.na(xP_index))
-
-
-
-# Correlations
-cor(gw5_players_xp$xP_odds, gw5_players_xp$total_points)
-cor(gw5_players_xp$xP_index, gw5_players_xp$total_points)
-
-# Odds metric vs Index metric correlation? Pretty high
-cor(gw5_players_xp$xP_index, gw5_players_xp$xP_odds)
+# gw6
+gw6_players_xp <- fpl_performance_comparison(gw = "gw6")
 
 

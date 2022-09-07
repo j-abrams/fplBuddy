@@ -12,6 +12,8 @@ library(rvest)
 library(roxygen2)
 library(data.table)
 library(stringr)
+library(reticulate)
+library(jsonlite)
 #devtools::install_github("ewenme/fplr", force = T)
 #devtools::install_github("wiscostret/fplscrapR", force = T)
 library(fplr)
@@ -29,25 +31,39 @@ library(fplBuddy)
 # TODO: Warning: Supporting functions each need to be in an individual script
 devtools::document()
 #load_all()
-#library(fplBuddy)
 #check()
 
 
 
-# TODO: further documentation using roxygen
 # TODO: change name of data sets including where they appear in functions.
-# - Move to behind-the-scenes location
+# - Move data to behind-the-scenes location
+#
 # TODO: Gameweek Functions to compare model performance vs actual scores at some point
-#TODO: Think about matching on id rather than name -
+#
+# TODO: Think about matching on id rather than name -
 # This would avoid name clashes we are seeing
 # Some manual computation to correct IDs fo missing players.
 
 # TODO: Develop combined method - predict points for first gameweek using odds
 # Proceeding gameweeks using index method (odds not available).
-# Combine both methods - select players for team based on average pointscovered between the two
+# Combine both methods - select players for team based on average points scored between the two
 
 # TODO: Experiment with strength index - maybe find a way for influence to be stronger for higher scoring players
 # This would give a better indication of whom to captain.
+# Include days to next match in the metric
+
+# TODO: Budget function - Include selling price somehow
+#
+# TODO: Compare gw6 predictions vs actuals
+#
+# TODO: Get odds data for gw7
+
+
+
+res <- fpl_get_response(key = "ja11g14@soton.ac.uk",
+                        secret = "vonfoj-tyhby9-vyrrUf",
+                        user = "6238967")
+
 
 
 # Goals, assists and clean sheets
@@ -56,9 +72,6 @@ odds_cs_gw6 <- fplBuddy::fpl_odds_generator_cs()
 # use_data() - Update each gameweek iteration
 
 
-
-#fpl_load_historic_data()
-#fpl_fixtures_difficulty_rating()
 
 # period
 period <- fpl_fixtures(6, 6)
@@ -74,8 +87,6 @@ players_index <- fpl_calculate_predictors(
                    odds_gs = odds_gs_gw6,
                    odds_cs = odds_cs_gw6
                    )
-
-
 
 
 # user unique id
