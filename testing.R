@@ -14,6 +14,7 @@ library(data.table)
 library(stringr)
 library(reticulate)
 library(jsonlite)
+
 #devtools::install_github("ewenme/fplr", force = T)
 #devtools::install_github("wiscostret/fplscrapR", force = T)
 library(fplr)
@@ -52,38 +53,36 @@ devtools::document()
 # This would give a better indication of whom to captain.
 # Include days to next match in the metric
 
-# TODO: Budget function - Include selling price somehow
+# TODO: Budget function - Include selling price somehow - DONE.
 #
-# TODO: Compare gw6 predictions vs actuals
+# TODO: Compare gw6 predictions vs actuals - DONE.
 #
 # TODO: Get odds data for gw7
+# Clean sheets - DONE.
+# goal scorers - not updated on the website
 
-
-
-res <- fpl_get_response(key = "ja11g14@soton.ac.uk",
-                        secret = "vonfoj-tyhby9-vyrrUf",
-                        user = "6238967")
+# TODO: Automate gameweek argument?
 
 
 
 # Goals, assists and clean sheets
 odds_gs_gw6 <- fplBuddy::fpl_odds_generator_gs(read.csv("data/FFP Points Predictor gw6.csv"))
-odds_cs_gw6 <- fplBuddy::fpl_odds_generator_cs()
+odds_cs_gw7 <- fplBuddy::fpl_odds_generator_cs()
 # use_data() - Update each gameweek iteration
 
 
 
 # period
-period <- fpl_fixtures(6, 6)
+period <- fpl_fixtures(7, 7)
 # sample table for difficulty
-fplBuddy::fpl_fixtures_difficulty_rating(5, 5)
+fplBuddy::fpl_fixtures_difficulty_rating(7, 7)
 
-
+# This returns ict index and points totals as of most recent week
 players <- fpl_get_player_all()
 
 #weight = 0.5, strength_index = 1
 players_index <- fpl_calculate_predictors(
-                   players, period, gw = 6, weight = 0.5, strength_index = 3,
+                   players, period, gw = 7, weight = 0.5, strength_index = 1,
                    odds_gs = odds_gs_gw6,
                    odds_cs = odds_cs_gw6
                    )
@@ -93,9 +92,10 @@ players_index <- fpl_calculate_predictors(
 user <- "6238967"
 
 #odds
-players_xP_odds <- fpl_calculate_xP(players_index, predictors_odds, user = "1061582", gw = 6)
+players_xP_odds <- fpl_calculate_xP(players_index, predictors_odds, user = user, gw = 6)
 sum(players_xP_odds$xP)
-players_xP_index <- fpl_calculate_xP(players_index, predictors_indexes, user = "1061582", gw = 6)
+
+players_xP_index <- fpl_calculate_xP(players_index, predictors_indexes, user = user, gw = 7)
 sum(players_xP_index$xP)
 
 # Export finalised predictions each week.
@@ -103,24 +103,23 @@ sum(players_xP_index$xP)
 # write.csv(players_xP_index, "data/Previous week predictions/gw6_players_xP_index.csv")
 
 
-sol <- fplBuddy::fpl_optimise(players_xP_odds, players_xP_odds$xP, budget = 83.6)
-sol <- fplBuddy::fpl_optimise(players_xP_index, players_xP_index$xP, budget = 83.6)
-
-
 
 # Budget
-5 + 5 + 7.5 + 6 + 5.5 + 7.8 + 7.7 + 13 + 8.1 + 6.3 + 8.1
+# 5 + 5 + 7.5 + 6 + 5.5 + 7.8 + 7.7 + 13 + 8.1 + 6.3 + 8.1
+budget <- fpl_my_budget(key = "ja11g14@soton.ac.uk", secret = "vonfoj-tyhby9-vyrrUf", user = "6238967")
+
 
 # Dream Team
-sol <- fplBuddy::fpl_optimise(players_xP, players_xP$xP, budget = 83.6)
+sol <- fplBuddy::fpl_optimise(players_xP_odds, players_xP_odds$xP, budget = budget)
+sol <- fplBuddy::fpl_optimise(players_xP_index, players_xP_index$xP, budget = budget)
+
 # Optimal transfers
-sol <- fpl_optimise_my_team(players_xP, players_xP$xP, budget = 80)
+sol <- fpl_optimise_my_team(players_xP_index, players_xP_index$xP, budget = budget, transfers = 2)
+
 
 # My Team
-my_team <- fpl_my_team(user = "1061582")
-
 # Tell me which players should be subbed out
-for (i in unlist(my_team)) {
+for (i in unlist(fpl_my_team(user, squad = 11))) {
   if (!(i %in% sol$name)) {
     print(i)
   }

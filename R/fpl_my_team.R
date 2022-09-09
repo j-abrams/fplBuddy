@@ -35,26 +35,4 @@ fpl_my_team <- function(user, squad = 11) {
 
 
 
-# Function to Work out funds user has at their disposal right now
-# Assume benched players are static - although in practice this may be false.
-fpl_my_budget <- function(user, players_collated_final) {
-
-  gw <- fplr::fpl_get_gameweek_current()$id - 1
-
-  # Initial budget
-  budget <- fplscrapR::get_entry(user)$last_deadline_value / 10
-
-  # Isolate cost of bench players only to calculate funds available for squad players
-  my_team_temp <- fplscrapR::get_entry_player_picks(user, gw) %>%
-    filter(position %in% 12:15) %>%
-    left_join(players_collated_final, by = c("playername" = "name")) %>%
-    select(playername, now_cost)
-
-  # Final amount
-  budget_final <- budget - sum(my_team_temp$now_cost)
-
-  return(budget_final)
-
-}
-
 

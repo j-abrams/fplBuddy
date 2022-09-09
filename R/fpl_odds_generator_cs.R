@@ -44,6 +44,8 @@ fpl_odds_generator_cs <- function() {
       Team == "Cr.Palace" ~ "Crystal Palace",
       Team == "Wolverhampton" ~ "Wolves",
       Team == "Manch.Utd." ~ "Man Utd",
+
+      Team == "Manchester Utd." ~ "Man Utd",
       TRUE ~ Team))
 
   return(clean_sheet_odds)
