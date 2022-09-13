@@ -20,10 +20,18 @@
 #
 # Return odds for anytime goalscorer and anytime assists
 
-fpl_odds_generator_gs <- function(data = odds_gs_gw5) {
+fpl_odds_generator_gs <- function(data = fplBuddy::odds_gs_gw6) {
 
   # Data cleansing - several names need updating. Warning - very manual task
   # Note - other names on this list have been excluded. Fix at some point
+
+
+  # players_id - used for our joins.
+  players_id <- fpl_get_player_all() %>%
+    mutate(name = paste(first_name, second_name)) %>%
+    select(name, second_name, id)
+
+
 
   odds_gw <- data %>%
     mutate(Name =
@@ -74,9 +82,103 @@ fpl_odds_generator_gs <- function(data = odds_gs_gw5) {
     ungroup() %>%
 
     # Hot Fix
-    mutate(Name = str_convert(Name))
+    mutate(Name = str_convert(Name)) %>%
+
+
+    # New Lookup via id
+    mutate(second_name = str_convert(Name)) %>%
+    left_join(players_id, by = "second_name") %>%
+    select(-name, -second_name) %>%
+    mutate(id = case_when(
+      Name == "Darwin" ~ 297,
+      Name == "Alvarez" ~ 319,
+      Name == "Diaz" ~ 293,
+      Name == "Carvalho" ~ 296,
+      Name == "Jimenez" ~ 476,
+      Name == "Antony" ~ 609,
+      Name == "Gro?" ~ 104,
+      Name == "Mitrovic" ~ 210,
+      Name == "Podence" ~ 483,
+      Name == "Guedes" ~ 579,
+      Name == "Neto" ~ 486,
+      Name == "Gundogan" ~ 300,
+      Name == "Hwang" ~ 481,
+      Name == "Odegaard" ~ 7,
+      Name == "Peri?ic" ~ 448,
+      Name == "Adama" ~ 491,
+      Name == "Joelinton" ~ 371,
+      Name == "Sinisterra" ~ 508,
+      Name == "Fabio Vieira" ~ 25,
+      Name == "Willian" ~ 614,
+      Name == "Bruno Guimaraes" ~ 374,
+      Name == "Buendia Stati" ~ 42,
+      Name == "Sarmiento" ~ 119,
+      Name == "Neves" ~ 480,
+      Name == "Aribo" ~ 512,
+      Name == "Rondon" ~ 177,
+      Name == "Almiron" ~ 369,
+      Name == "Hojbjerg" ~ 433,
+      Name == "Matheus" ~ 589,
+      Name == "Emerson Royal" ~ 445,
+      Name == "S.Armstrong" ~ 405,
+      Name == "N.Williams" ~ 295,
+      Name == "J.Henderson" ~ 275,
+      Name == "Fornals" ~ 469,
+      Name == "Caicedo" ~ 120,
+      Name == "Rodri" ~ 315,
+      Name == "Moutinho" ~ 503,
+      Name == "Fred" ~ 331,
+      Name == "S.Longstaff" ~ 370,
+      Name == "Fabinho" ~ 282,
+      Name == "Casemiro" ~ 593,
+      Name == "Dembele" ~ 74,
+      Name == "Estupinan" ~ 586,
+      Name == "Ait-Nouri" ~ 487,
+      Name == "Renan Lodi" ~ 602,
+      Name == "Ben Davies" ~ 432,
+      Name == "Roca" ~ 245,
+      Name == "Van Dijk" ~ 280,
+      Name == "Roerslev" ~ 90,
+      Name == "Cedric" ~ 1,
+      Name == "Perez" ~ 260,
+      Name == "Palhinha" ~ 220,
+      Name == "Firpo" ~ 239,
+      Name == "Vinagre" ~ 531,
+      Name == "C.Doucoure" ~ 514,
+      Name == "Dalot" ~ 342,
+      Name == "Sambi" ~ 18,
+      Name == "Ake" ~ 308,
+      Name == "Dias" ~ 312,
+      Name == "Semedo" ~ 482,
+      Name == "Thiago Silva" ~ 128,
+      Name == "Schar" ~ 366,
+      Name == "Lerma" ~ 64,
+      Name == "Gabriel" ~ 16,
+      Name == "Kouyate" ~ 583,
+      Name == "Douglas Luiz" ~ 46,
+      Name == "Toti" ~ 489,
+      Name == "Sanchez" ~ 435,
+      Name == "Martinez" ~ 533,
+      Name == "Sergio Gomez" ~ 587,
+      Name == "Van Hecke" ~ 544,
+      Name == "Lyanco" ~ 413,
+      Name == "Emerson" ~ 545,
+      Name == "Soumare" ~ 269,
+      TRUE ~ as.numeric(id)
+    )) %>%
+    #mutate(id = as.character(id)) %>%
+    filter(!is.na(id)) %>%
+    #filter(!is.na(Name)) %>%
+    group_by(Name) %>%
+    filter(id == max(id)) %>%
+    filter(AnytimeGoal == max(AnytimeGoal)) %>%
+    filter(AnytimeAssist == max(AnytimeAssist)) %>%
+    ungroup() %>%
+    distinct()
+  #filter(n() > 1)
 
   return(odds_gw)
+
 }
 
 
@@ -91,8 +193,6 @@ fpl_odds_generator_gs <- function(data = odds_gs_gw5) {
 # x <- as.character(test[1][1])
 #
 # paste0("https", sub('.*https', "", sub('csv.*', "", x)), "csv")
-
-
 
 
 

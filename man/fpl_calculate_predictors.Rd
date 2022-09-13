@@ -6,12 +6,11 @@
 \usage{
 fpl_calculate_predictors(
   players = players,
-  gw,
   period,
   weight = 0.5,
   strength_index = 1,
-  odds_gs = odds_gs_gw4,
-  odds_cs = odds_cs_gw4
+  odds_gs = odds_gs_gw8,
+  odds_cs = odds_cs_gw8
 )
 }
 \arguments{

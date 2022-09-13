@@ -8,7 +8,7 @@ fpl_calculate_xP(
   data = players_index,
   predictors = predictors_indexes,
   user,
-  gw = 5
+  gw = 8
 )
 }
 \arguments{

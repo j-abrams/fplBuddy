@@ -44,3 +44,9 @@ str_convert <- function(x) {
 
 
 
+# "Not In" operator - the opposite of "%in%"
+# https://stackoverflow.com/questions/5831794/opposite-of-in-exclude-rows-with-values-specified-in-a-vector
+
+`%!in%` <- function (x, table) is.na(match(x, table, nomatch=NA_integer_))
+
+

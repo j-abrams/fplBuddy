@@ -33,7 +33,7 @@
 
 
 fpl_calculate_xP <- function(data = players_index, predictors = predictors_indexes,
-                             user, gw = 5) {
+                             user, gw = 8) {
 
   # Calculate expected points for the period (xP) - Using historical model
   model <- lm(total_points ~ ., data = fplBuddy::fpl_historical_data_final %>% select(predictors))
@@ -42,19 +42,30 @@ fpl_calculate_xP <- function(data = players_index, predictors = predictors_index
   # Take a look at residuals and r squared
   print(summary(model))
 
-  players_collated2 <- data %>%
-    mutate(p = round(p, 2))
+  test <- data %>%
+    select(gameweek) %>%
+    distinct()
 
-  # save p as a new coloumn in players_collated_final
-  players_collated <- data %>%
-    mutate(p = round(p, 2))  %>%
-    group_by(name) %>%
-    mutate(xP = sum(p)) %>%
-    select(name, team, position, now_cost, xP) %>%
-    distinct() %>%
-    ungroup()
 
-  gw <- gw - 1
+  if (nrow(test) == 1) {
+
+    # save p as a new coloumn in players_collated_final
+    players_collated <- data %>%
+      mutate(p = round(p, 2))  %>%
+      group_by(name) %>%
+      mutate(xP = sum(p)) %>%
+      select(name, team, gameweek, position, now_cost, xP) %>%
+      distinct() %>%
+      ungroup()
+
+  } else {
+
+    players_collated <- data %>%
+      mutate(xP = round(p, 2)) %>%
+      select(name, team, gameweek, position, now_cost, xP)
+
+  }
+
 
   my_team <- fpl_my_team(user, squad = 11)
 

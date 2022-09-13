@@ -37,25 +37,47 @@
 # odds_gs = odds_gs_gw5
 # odds_cs = odds_cs_gw5
 
-fpl_calculate_predictors <- function(players = players, gw,
-                                     period, weight = 0.5, strength_index = 1, odds_gs = odds_gs_gw4, odds_cs = odds_cs_gw4) {
 
-  # gw is used as a conversion for total points scored so far - to average points per gw
-  # Therefore for gw 4, we want to divide total points by number of gameweeks completed so far: 3
-  gw <- gw - 1
+fpl_calculate_predictors <- function(players = players,
+                                     period, weight = 0.5, strength_index = 1, odds_gs = odds_gs_gw8, odds_cs = odds_cs_gw8) {
+
 
   # Data preparation
-  last_season_index <- fpl_historical_performance_data
+  # Setting up lookup table for configuring player id
+  players_id <- players %>%
+    mutate(name = str_convert(paste(first_name, second_name))) %>%
+    select(name, second_name, id, total_points) %>%
+    mutate(name = case_when(
+      name == "Son Heung-min" ~ "Son Heung-Min",
+      TRUE ~ name
+    )) %>%
+    group_by(second_name) %>%
+    filter(total_points == max(total_points)) %>%
+    ungroup() %>%
+    select(-total_points)
+
+  last_season_index <- fpl_historical_performance_data %>%
   # TODO: include Ilkay Gundogan - visit archives - long.
+    mutate(name = str_convert(name)) %>%
+    right_join(players_id, by = "name") %>%
+    select(-second_name)
+
 
   # Coefficient Used later for scaling in accordance with round01 standardisation function
+  # Set these equal to 1 to impose standardisation
+  # Makes sense for predicting hauls as some players will score or assist more than once in a single game sometimes
   odds_cs_max <- max(odds_cs$clean_sheet_odds)
+  #odds_cs_max <- 1
+  #odds_gs_max <- max(odds_gs$AnytimeGoal)
+  #odds_assist_max <- max(odds_gs$AnytimeAssist)
+  odds_gs_max <- 1
+  odds_assist_max <- 1
 
 
   # Data wrangling
   players_collated <- players %>%
     mutate(name = paste(first_name, second_name)) %>%
-    select(name, second_name, team, minutes, element_type, now_cost,
+    select(id, name, second_name, team, minutes, matches_played, element_type, now_cost,
            total_points, ict_index) %>%
 
     # Define position from element_type variable here.
@@ -69,7 +91,7 @@ fpl_calculate_predictors <- function(players = players, gw,
            ) %>%
     # join with period - will be used to find strength index
     left_join(period, by = c("team" = "id")) %>%
-    select(-team, -gameweek) %>%
+    select(-team) %>%
     dplyr::rename("team" = "team.y") %>%
 
     # Define average_points, used to develop the final points index
@@ -77,12 +99,18 @@ fpl_calculate_predictors <- function(players = players, gw,
     # Limited as we have only had two gameweeks at the time of writing!
     select(name, team, opponent, everything()) %>%
     group_by(name) %>%
-    mutate(average_points = round((total_points / gw), 2)) %>%
-    ungroup() %>%
+    mutate(average_points = round((total_points / matches_played), 2)) %>%
+    ungroup()
 
+
+
+  # Add index metrics
+  players_collated2 <- players_collated %>%
     # james_points_index & james_ict_index
     # fuzzyjoin - the first step towards computing finalpoints and ict index scores
-    fuzzyjoin::stringdist_left_join(last_season_index, by = "name", max_dist = 2) %>%
+    left_join(last_season_index, by = "id") %>%
+
+    #fuzzyjoin::stringdist_left_join(last_season_index, by = "id", max_dist = 0) %>%
     # Soooo messy. Still so many players names don't match. See archives
     # This is a mess because names do not match in the two datasets
 
@@ -95,7 +123,7 @@ fpl_calculate_predictors <- function(players = players, gw,
                                        ((1 - weight) * average_points.y))) %>%
 
     # Adjust ICT index with weight factor in the same manner as above
-    mutate(ict_index_lag = ict_index / gw) %>%
+    mutate(ict_index_lag = ict_index / matches_played) %>%
     mutate(james_ict_index = ifelse(is.na(ict_index_avg),
                                     ict_index_lag,
                                     (weight * ict_index_lag) +
@@ -129,10 +157,14 @@ fpl_calculate_predictors <- function(players = players, gw,
     # solution using str_convert to get a better match
     mutate(second_name = str_convert(second_name))
 
-  players_collated2 <- players_collated %>%
+
+  # Here is where we need to join by id
+  # Add odds metrics
+  players_collated3 <- players_collated2 %>%
     #mutate(name = str_convert(name)) %>%
-    left_join(odds_gs, by = c("second_name" = "Name")) %>%
-    left_join(odds_cs, by = c("team" = "Team")) %>%
+    left_join(odds_gs, by = c("id", "gameweek")) %>%
+    #left_join(odds_gs, by = c("second_name" = "Name")) %>%
+    left_join(odds_cs, by = c("team" = "Team", "gameweek")) %>%
 
 
     # Hot fix - remove duplicated names - just not working atm - 638 down to 593 names
@@ -206,7 +238,7 @@ fpl_calculate_predictors <- function(players = players, gw,
     # "Jamal Lewis"        "Steve Cook"         "Omar Richards"      "Stuart Armstrong"   "Davinson Sánchez"
     # "Harvey White"       "Ben Johnson"        "Jackson Smith"
 
-    select("name", "second_name", "team", "position",
+    select("name", "second_name", "team", "position", "gameweek",
            "opponent", "was_home", "now_cost",
            "james_odds_index", "james_cs_index",
            "james_points_index", "james_ict_index", "james_strength_index")
@@ -214,11 +246,11 @@ fpl_calculate_predictors <- function(players = players, gw,
 
   #, "minutes", "AnytimeGoal", "AnytimeAssist", "clean_sheet_odds")
   # Select these fields to check odds
-  # Some of these are so dumb. Ziyech and gordon for example - why are their odds so high ffs
+  # Some of the are so dumb. Ziyech and gordon for example - why are their odds so high ffs
   # Fixed this by scaling odds index relative to minutes played
 
 
-  return(players_collated2)
+  return(players_collated3)
 
 }
 

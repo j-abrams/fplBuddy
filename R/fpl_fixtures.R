@@ -50,9 +50,19 @@ fpl_fixtures <- function(gameweek1, gameweek2) {
            strength_overall_home = strength_overall_home.x,
            strength_overall_away = strength_overall_away.y)
 
+  fixtures_test <- fixtures %>%
+    select(gameweek) %>%
+    distinct() %>%
+    mutate(gameweek2 = lag(gameweek)) %>%
+    filter(gameweek == gameweek1)
+
+  gameweek_last <- fixtures_test$gameweek2
+
   # Filter subject to user selected gameweek arguments
   fixtures_x_weeks <- fixtures %>%
-    filter(gameweek %in% c((gameweek1 - 1):gameweek2))
+    group_by(gameweek) %>%
+    filter(!(is.na(gameweek))) %>%
+    filter(gameweek %in% c(gameweek_last:gameweek2))
 
   # Initialisation before commencing loop operation
   fixtures_all <- NULL

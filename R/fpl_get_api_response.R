@@ -37,13 +37,11 @@ fpl_get_api_response <- function(key, secret, user) {
   # Run this attached python script to get what we need
   reticulate::source_python("fpl.py")
 
+  #res <- res
   res <- fromJSON(res$text)$picks
 
 
   return(res)
 }
-
-
-
 
 
