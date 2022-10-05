@@ -39,7 +39,8 @@
 
 
 fpl_calculate_predictors <- function(players = players,
-                                     period, weight = 0.5, strength_index = 1, odds_gs = odds_gs_gw8, odds_cs = odds_cs_gw8) {
+                                     period, weight = 0.5, strength_index = 1,
+                                     odds_gs = odds_gs_gw9, odds_cs = odds_cs_gw9) {
 
 
   # Data preparation
@@ -77,6 +78,8 @@ fpl_calculate_predictors <- function(players = players,
   # Data wrangling
   players_collated <- players %>%
     mutate(name = paste(first_name, second_name)) %>%
+    # Hot fix. Need Danny Ward not Joel Ward
+    filter(name != "Joel Ward") %>%
     select(id, name, second_name, team, minutes, matches_played, element_type, now_cost,
            total_points, ict_index) %>%
 
@@ -151,7 +154,7 @@ fpl_calculate_predictors <- function(players = players,
   # james_odds_index and james_cs_index
 
     # Fix mitrovic player name
-    mutate(second_name = ifelse(team == "Fulham" & startsWith(name, "Aleksandar"), "Mitrovic", second_name)) %>%
+    #mutate(second_name = ifelse(team == "Fulham" & startsWith(name, "Aleksandar"), "Mitrovic", second_name)) %>%
 
     # Combine with latest odds data here
     # solution using str_convert to get a better match
@@ -177,10 +180,15 @@ fpl_calculate_predictors <- function(players = players,
 
     # Standardise
     # Fix goals
-    mutate(AnytimeGoal = as.numeric(minutes) * as.numeric(AnytimeGoal)) %>%
+
+    # - In the past I have used minutes to adjust Goals / Assists.
+    # Now want to use something different.
+    # Percentage chance to start.
+
+    #mutate(AnytimeGoal = as.numeric(minutes) * as.numeric(AnytimeGoal)) %>%
     mutate(AnytimeGoal = range01(ifelse(is.na(AnytimeGoal), 0, AnytimeGoal))) %>%
     # Fix assists
-    mutate(AnytimeAssist = as.numeric(minutes) * as.numeric(AnytimeAssist)) %>%
+    #mutate(AnytimeAssist = as.numeric(minutes) * as.numeric(AnytimeAssist)) %>%
     mutate(AnytimeAssist = range01(ifelse(is.na(AnytimeAssist), 0, AnytimeAssist))) %>%
     # Fix clean sheets
     mutate(clean_sheet_odds = as.numeric(minutes) * as.numeric(clean_sheet_odds)) %>%

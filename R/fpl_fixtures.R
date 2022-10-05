@@ -99,9 +99,11 @@ fpl_fixtures <- function(gameweek1, gameweek2) {
     mutate(next_match =
              as.numeric(as.Date(max(kickoff_time)) - as.Date(shift(kickoff_time)))) %>%
     mutate(next_match = ifelse(is.na(next_match), 0, next_match)) %>%
-    filter(next_match != 0) %>%
+    filter(gameweek %in% c(gameweek1:gameweek2)) %>%
     mutate(next_match = sum(next_match)) %>%
     select(-kickoff_time)
+  fixtures_all_2 <- fixtures_all_2 %>%
+    mutate(next_match = ifelse(next_match == 0, max(fixtures_all_2$next_match), next_match))
 
   return(fixtures_all_2)
 

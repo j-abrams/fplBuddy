@@ -17,7 +17,9 @@
 # Take a look at how odds and index predictions shape up against actual recored points.
 # Odds is approx 60% accurate, index approx 50%
 
-fpl_performance_comparison <- function(players, gw = "gw4") {
+fpl_performance_comparison <- function(players = player_details, gw_x = 8) {
+
+  gw <- paste0("gw", gw_x)
 
   # Prep
   gameweek <- fpl_get_gameweek_next()$id
@@ -52,15 +54,26 @@ fpl_performance_comparison <- function(players, gw = "gw4") {
   # Define filenames to be read in using paste0 function and gw argument
   filename  <- paste0("data/Previous week predictions/", gw, "_players_xP_odds.csv")
   filename2 <- paste0("data/Previous week predictions/", gw, "_players_xP_index.csv")
+  filename3 <- paste0("data/Previous week predictions/", gw, "_players_xP.csv")
 
-  # Employ dplyr full_joins to pull predictions and actuals together
-  gameweek_players_xp <- read.csv(filename) %>%
-    full_join(read.csv(filename2), by = "name") %>%
-    mutate(name = str_convert(name)) %>%
-    full_join(gameweek, by = "name") %>%
-    select(-ict_index) %>%
-    select(name, "xP_odds" = "xP.x", "xP_index" = "xP.y", total_points) %>%
-    filter(!is.na(total_points) & !is.na(xP_index))
+
+  if (gw_x < 8) {
+
+    # Employ dplyr full_joins to pull predictions and actuals together
+    gameweek_players_xp <- read.csv(filename) %>%
+      full_join(read.csv(filename2), by = "name") %>%
+      mutate(name = str_convert(name)) %>%
+      full_join(gameweek, by = "name") %>%
+      select(-ict_index) %>%
+      select(name, "xP_odds" = "xP.x", "xP_index" = "xP.y", total_points) %>%
+      filter(!is.na(total_points) & !is.na(xP_index))
+
+  } else if (gw_x >= 8) {
+    gameweek_players_xp <- read.csv(filename3) %>%
+      full_join(gameweek, by = "name") %>%
+      select(-ict_index) %>%
+      filter(!is.na(total_points) & !is.na(xP_index))
+  }
 
   # Correlations - Odds prediction method
   print(paste(gw, "Correlation - Total Points Vs. odds:",

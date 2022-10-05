@@ -1,0 +1,53 @@
+
+
+Introduction to the fplBuddy package.
+
+
+Key functions for development:
+
+devtools::document() - Take care of the DESCRIPTION and NAMESPACE files
+load_all()
+check()
+use_data() - Add latest odds data to the package repo once it becomes available
+
+
+Key functions for modelling - Function Glossary
+Note: fplBuddy functions are subject to be renamed.
+
+
+fplr package
+
+fplr::fpl_get_gameweek_next()$id - Return current gameweek number
+fplr::fpl_get_player_all() - data from the fpl api about all players
+fplr::fpl_get_teams() - get team info including strengths etc.
+fplr::fpl_get_fixtures() - get fixtures info
+
+
+fplscrapR package
+
+fplscrapR::get_player_details() - get "player_details" variable
+
+
+fplBuddy package
+
+fplBuddy::fpl_gameweek_predictions() - master function
+fplBuddy::fpl_get_gw_joined() - get "gw_joined" - player_details manipulation
+                                returns details up to and including the specified gameweek
+fplBuddy::fpl_fixtures - Return all clubs fixtures within a denoted time period
+fplBuddy::fpl_odds_generator_gs() - transform goals and assists odds to required format
+fplBuddy::fpl_odds_generator_cs() - scrape clean sheet probabilities from the web
+fplBuddy::fpl_calculate_predictors() - produce "players_index"
+                                       Calculate each index method for our predictions
+fplBuddy::str_convert() - convert special characters in a string to regular utf-8 characters
+fplBuddy::fpl_calculate_xP() - use indexes to calculate expected points
+                               both methods included, odds method and index method
+fplBuddy::fpl_my_budget() - Calculate user budget from transfer funds available and squad value
+fpl_get_api_response() - Use Python to return detailed user data from the Fpl API
+fplBuddy::fpl_optimise() - Find the dream team for this week
+fplBuddy::fpl_optimise_my_team() - Determine which transfers should be made
+fpl_performance_comparison() - Compare predicted points Vs actual points scored
+
+
+
+
+

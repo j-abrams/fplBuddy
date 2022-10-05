@@ -20,7 +20,9 @@
 #
 # Return odds for anytime goalscorer and anytime assists
 
-fpl_odds_generator_gs <- function(data = fplBuddy::odds_gs_gw6) {
+
+
+fpl_odds_generator_gs <- function(data) {
 
   # Data cleansing - several names need updating. Warning - very manual task
   # Note - other names on this list have been excluded. Fix at some point
@@ -70,7 +72,7 @@ fpl_odds_generator_gs <- function(data = fplBuddy::odds_gs_gw6) {
            ) %>%
     # Still more names to fix. This is the problem with messy data, rip
 
-    select(Name, Team, AnytimeAssist, AnytimeGoal) %>%
+    select(Name, Team, AnytimeAssist, AnytimeGoal, Start) %>%
     mutate(AnytimeAssist = as.numeric(sub("%", "", AnytimeAssist)) / 100) %>%
     mutate(AnytimeGoal = as.numeric(sub("%", "", AnytimeGoal)) / 100) %>%
 
@@ -174,7 +176,12 @@ fpl_odds_generator_gs <- function(data = fplBuddy::odds_gs_gw6) {
     filter(AnytimeGoal == max(AnytimeGoal)) %>%
     filter(AnytimeAssist == max(AnytimeAssist)) %>%
     ungroup() %>%
-    distinct()
+    distinct() %>%
+    mutate(AnytimeGoal = AnytimeGoal * as.numeric(sub("%", "", Start))) %>%
+    mutate(AnytimeAssist = AnytimeAssist * as.numeric(sub("%", "", Start))) %>%
+    select(-Start)
+    #https://stackoverflow.com/questions/8329059/how-to-convert-character-of-percentage-into-numeric-in-r
+
   #filter(n() > 1)
 
   return(odds_gw)
@@ -193,6 +200,26 @@ fpl_odds_generator_gs <- function(data = fplBuddy::odds_gs_gw6) {
 # x <- as.character(test[1][1])
 #
 # paste0("https", sub('.*https', "", sub('csv.*', "", x)), "csv")
+
+
+
+
+
+# Some useful code to overwrite sys_data if you ever need to - for later reference.
+#https://github.com/r-lib/usethis/issues/1512
+
+# my_new_env <- new.env(hash = FALSE)
+#
+# # load current internal data into this new environment
+# load("R/sysdata.rda", envir = my_new_env)
+#
+# # add or replace some objects
+# my_new_env$odds_gs_gw6 <- odds_gs_gw6
+#
+# # save the environment as internal package data
+# save(list = names(my_new_env),
+#      file = "R/sysdata.rda",
+#      envir = my_new_env)
 
 
 

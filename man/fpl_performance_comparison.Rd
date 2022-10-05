@@ -4,7 +4,7 @@
 \alias{fpl_performance_comparison}
 \title{Compare how predictions shape up against observed actuals, one gameweek at a time.}
 \usage{
-fpl_performance_comparison(players, gw = "gw4")
+fpl_performance_comparison(players = player_details, gw_x = 8)
 }
 \arguments{
 \item{gw}{Gameweek we are comparing}

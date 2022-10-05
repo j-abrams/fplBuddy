@@ -55,7 +55,7 @@ fpl_optimise <- function(input = players_xP, obj_var = players_xP$xP, budget = 8
     cbind(input,
           as.data.frame(sol$solution)) %>%
     filter(sol$solution == 1) %>%
-    select(-in_my_team, -`sol$solution`)
+    select(-`sol$solution`)
 
 
   return(sol_final)

@@ -15,8 +15,7 @@
 #' @export
 
 
-fpl_gameweek_predictions <- function(players = player_details, gameweek = 8) {
-
+fpl_gameweek_predictions <- function(players = player_details, gameweek = 9) {
 
   # Testing contents of function arguments to generate helpful error messages to the user
 
@@ -38,67 +37,41 @@ fpl_gameweek_predictions <- function(players = player_details, gameweek = 8) {
   }
 
 
+  # Get gw_joined
+  gw_joined <- fpl_get_gw_joined(players, gameweek)
 
-  last_gameweek <- gameweek - 1
-
-  # Populate list of past gameweeks
-  gameweeks <- list()
-  for (i in 1:last_gameweek) {
-    #print(paste0("gw", i))
-    gameweeks <- append(gameweeks, list(paste0("gw", i)))
-  }
-
-
-  gw_collated <- NULL
-
-  for (i in 1:length(gameweeks)) {
-    temp <- players %>%
-      group_by(playername) %>%
-      filter(fixture <= i * 10 & fixture > (i * 10) - 10) %>%
-      mutate(was_home = as.numeric(was_home)) %>%
-      select(name = playername, minutes, element, total_points, ict_index) %>%
-      ungroup()
-
-    # Assignment - Might need this later
-    assign(gameweeks[[i]], temp)
-
-    # Form gw_collated using rbind()
-    gw_collated <- rbind(gw_collated, temp)
-  }
-
-  # Save Past predictions - Opportunity to do some back casting here
-  # Odds data only available from gameweek 4 onwards
-
-  # 1. Collate
-  gw_collated <- gw_collated %>%
-    group_by(name) %>%
-    summarise(element = min(element),
-              minutes = sum(minutes),
-              total_points = sum(total_points),
-              ict_index = sum(as.numeric(ict_index)),
-              matches_played = n())
-
-  # 2. Join
-  gw_joined <- fpl_get_player_all() %>%
-    #mutate(name = paste(first_name, second_name)) %>%
-    left_join(gw_collated, by = c("id" = "element") ) %>%
-    mutate(total_points = total_points.y,
-           ict_index = ict_index.y,
-           minutes = minutes.y) %>%
-    select(-c(name, minutes.x, minutes.y, ict_index.x, total_points.x, ict_index.y, total_points.y))
-
-
-  # period
+  # Get period
   period <- fpl_fixtures(gameweek, gameweek)
 
+  # Get odds
+  # Ensuring odds data populates.
+  # "while" loop Will back track to find most recent odds in absence of the latest entries.
 
-  # odds
-  odds_gs <- fpl_odds_generator_gs(
-    eval(parse(text = paste0("fplBuddy::odds_gs_gw", gameweek)))
-  ) %>%
+
+  # Weird warning.
+  #
+  # Warning message:
+  # In rm(list = Filter(exists, c("odds_gs", "odds_cs"))) :
+  #   object 'odds_gs' not found
+  # rm(list = Filter(exists, c("odds_gs", "odds_cs")))
+
+  i <- 0
+
+  while (!exists("odds_gs")) {
+    tryCatch(
+      odds_gs <- eval(parse(text = paste0("fplBuddy::odds_gs_gw", gameweek - i))),
+      error = function(e) {
+        i <- i + 1
+      }
+    )
+  }
+
+  print(paste("Defaulting to use odds data for gameweek",  gameweek - i))
+
+  odds_gs <- fpl_odds_generator_gs(odds_gs) %>%
     mutate(gameweek = gameweek)
 
-  odds_cs <- eval(parse(text = paste0("fplBuddy::odds_cs_gw", gameweek))) %>%
+  odds_cs <- eval(parse(text = paste0("fplBuddy::odds_cs_gw", gameweek - i))) %>%
     mutate(gameweek = gameweek)
 
 
@@ -107,6 +80,8 @@ fpl_gameweek_predictions <- function(players = player_details, gameweek = 8) {
     players = gw_joined, period = period,
     odds_gs = odds_gs,
     odds_cs = odds_cs)
+
+
 
   gw_players_xP_odds <- fpl_calculate_xP(
     players_index, predictors_odds, user = "6238967", gw = gameweek)
@@ -120,8 +95,8 @@ fpl_gameweek_predictions <- function(players = player_details, gameweek = 8) {
     rename("xP_odds" = "xP") %>%
     left_join(gw_players_xP_index, by = c("name", "team", "gameweek", "position", "now_cost", "in_my_team")) %>%
     rename("xP_index" = "xP") %>%
-    select(name, team, position, gameweek, now_cost, xP_odds, xP_index, in_my_team) %>%
-    mutate(xP_odds = ifelse(is.na(xP_index), NA, xP_odds))
+    select(name, team, position, gameweek, now_cost, xP_odds, xP_index, in_my_team) #%>%
+    #mutate(xP_odds = ifelse(is.na(xP_index), NA, xP_odds))
 
   # return
   return(gw_players_xP)

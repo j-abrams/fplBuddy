@@ -9,8 +9,8 @@ fpl_calculate_predictors(
   period,
   weight = 0.5,
   strength_index = 1,
-  odds_gs = odds_gs_gw8,
-  odds_cs = odds_cs_gw8
+  odds_gs = odds_gs_gw9,
+  odds_cs = odds_cs_gw9
 )
 }
 \arguments{

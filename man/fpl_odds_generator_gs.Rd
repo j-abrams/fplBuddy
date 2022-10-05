@@ -4,7 +4,7 @@
 \alias{fpl_odds_generator_gs}
 \title{Return the odds for each player to score or register an assist for the next gameweek.}
 \usage{
-fpl_odds_generator_gs(data = fplBuddy::odds_gs_gw6)
+fpl_odds_generator_gs(data)
 }
 \arguments{
 \item{data}{Latest odds data for likelihood of scoring and assisting - gw5 at the time of writing}

@@ -1,40 +1,6 @@
 
 
 
-# Don't forget to specify type argument when installing devtools
-
-# install.packages("devtools", type = "win.binary")
-library(dplyr)
-library(devtools)
-library(fuzzyjoin)
-library(Rglpk)
-library(rvest)
-library(roxygen2)
-library(data.table)
-library(stringr)
-library(reticulate)
-library(jsonlite)
-
-#devtools::install_github("ewenme/fplr", force = T)
-#devtools::install_github("wiscostret/fplscrapR", force = T)
-library(fplr)
-library(fplscrapR)
-#usethis::use_package("fplr")
-#usethis::use_package("fplscrapR")
-
-
-#devtools::install_github("j-abrams/fplBuddy", force = T)
-library(fplBuddy)
-
-
-####################################################################
-
-# TODO: Warning: Supporting functions each need to be in an individual script
-devtools::document()
-#load_all()
-#check()
-
-
 
 #
 # TODO: Gameweek Functions to compare model performance vs actual scores at some point
@@ -54,17 +20,6 @@ devtools::document()
 # TODO: Automate gameweek argument?
 #
 ########################################
-#
-# TODO: change name of data sets including where they appear in functions.
-# - Move data to behind-the-scenes location
-# DONE - Moved fpl historic data
-# TODO: Budget function - Include selling price somehow - DONE.
-#
-# TODO: Compare gw6 predictions vs actuals - DONE.
-#
-# TODO: Get odds data for gw7
-# Clean sheets - DONE.
-# goal scorers - not updated on the website
 
 # TODO:
 # tidymodels package
@@ -75,94 +30,94 @@ devtools::document()
 
 #######################################
 
-library(fplBuddy)
-# Odds data ----
-
-# Goals, assists and clean sheets
-odds_gs_gw8 <- read.csv("data/FFP Points Predictor gw6.csv")
-odds_cs_gw8 <- fplBuddy::fpl_odds_generator_cs()
-# use_data() - Update each gameweek iteration
-
-use_data(odds_cs_gw8 , overwrite = T)
-
-
-
-
-# Some useful code to overwrite sys_data if you ever need to - for later reference.
-#https://github.com/r-lib/usethis/issues/1512
-
-# my_new_env <- new.env(hash = FALSE)
-#
-# # load current internal data into this new environment
-# load("R/sysdata.rda", envir = my_new_env)
-#
-# # add or replace some objects
-# my_new_env$odds_gs_gw6 <- odds_gs_gw6
-#
-# # save the environment as internal package data
-# save(list = names(my_new_env),
-#      file = "R/sysdata.rda",
-#      envir = my_new_env)
+devtools::document()
+#load_all()
+#check()
+source("packages.R")
 
 
 #########################
 #
-# Out of date now.
+# Old methods
 
 # gameweek
-gameweek <- fpl_get_gameweek_next()$id - 1
+gameweek <- fpl_get_gameweek_next()$id
 
-gameweek <- 6
 
-# period
-period <- fpl_fixtures(gameweek, gameweek)
+
+
+##############################################################
+
+# Further testing
+# fpl_gameweek_predictions serves as a master function.
+# Concerned about the duplicated names. Might try to join on player id in future. Done here
+
+devtools::document()
+
+
+# Odds data ----
+
+# Goals, assists and clean sheets
+# Save latest data - Update these lines as appropriate
+
+# https://www.fantasyfootballpundit.com/premier-league-goalscorer-assist-odds/
+
+odds_gs_gw10 <- read.csv("FFP Points Predictor gw10.csv")
+odds_cs_gw10 <- fplBuddy::fpl_odds_generator_cs()
+use_data(odds_gs_gw10, overwrite = TRUE)
+use_data(odds_cs_gw10)
+
+# Initiate
+player_details <- fplscrapR::get_player_details()
+
 # sample table for difficulty
 fplBuddy::fpl_fixtures_difficulty_rating(gameweek, gameweek)
 
-# This returns ict index and points totals as of most recent week
-players <- fpl_get_player_all()
-players <- gw_joined
-# TODO: Replace players with something else - gw_joined hits the spot. Why? to consider previous gameweek data
+# Find one week at a time.
+# Next - develop to have multiple weeks as we had before - need to focus on index metric not odds to do this though.
 
-#weight = 0.5, strength_index = 1
-players_index <- fpl_calculate_predictors(
-                   players, period, gw = gameweek, weight = 0.5, strength_index = 1,
-                   odds_gs = odds_gs_gw6_test,
-                   odds_cs = odds_cs_gw6)
+# Test - Different from before because of id matching
+rm(list = Filter(exists, c("odds_gs", "odds_cs")))
+test <- fpl_gameweek_predictions(players = player_details, 9)
 
+
+# Export finalised predictions each week.
+write.csv(test, "data/Previous week predictions/gw9_players_xP.csv")
+
+test2 <- read.csv("data/Previous week predictions/gw8_players_xP.csv")
+
+
+# TODO: Find all documentation some how
+# / write a ReadMe
+# TODO: Refine index method - currently not really accounting for injuries
+# Possibly train on this year data as well as last years.
+# Figure out what to do with master function when predicting more than one week at a time.
+# I feel like the odds change midweek...
+# Also, minutes adjustment not working for players like ISAK
+
+
+
+# Matching by ID means there will be a disparity for predictions collected in previous weeks
+# Why? Matching on Index now -
+# More players means KDB minutes standardisation weighs heavier in his favour for example
+
+##################################################
+
+#### Optimisation ----
 
 # user unique id
 user <- "6238967"
 
-#odds
-players_xP_odds <- fpl_calculate_xP(players_index, predictors_odds, user = user, gw = gameweek)
-sum(players_xP_odds$xP)
-
-players_xP_index <- fpl_calculate_xP(players_index, predictors_indexes, user = user, gw = gameweek)
-sum(players_xP_index$xP)
-
-# Export finalised predictions each week.
-# write.csv(players_xP_odds, "data/Previous week predictions/gw6_players_xP_odds.csv")
-# write.csv(players_xP_index, "data/Previous week predictions/gw6_players_xP_index.csv")
-
-
-
-#########################################
-
-# Optimisation ----
-
-# Budget
-# 5 + 5 + 7.5 + 6 + 5.5 + 7.8 + 7.7 + 13 + 8.1 + 6.3 + 8.1
 budget <- fpl_my_budget(key = "ja11g14@soton.ac.uk",
                         secret = "vonfoj-tyhby9-vyrrUf",
                         user = user)
 
-# Dream Team
-sol <- fplBuddy::fpl_optimise(players_xP_odds, players_xP_odds$xP, budget = budget)
-sol <- fplBuddy::fpl_optimise(players_xP_index, players_xP_index$xP, budget = budget)
+# Find my team here...
 
-# Optimal transfers
-sol <- fpl_optimise_my_team(players_xP_index, players_xP_index$xP, budget = budget, transfers = 2)
+sol <- fpl_optimise(test, test$xP_index, budget = budget)
+
+sol <- fpl_optimise_my_team(input = test, obj_var = test$xP_odds,
+                            budget = budget, transfers = 2)
 
 
 # My Team
@@ -173,61 +128,30 @@ for (i in unlist(fpl_my_team(user, squad = 11))) {
   }
 }
 
-
-
-##############################################################
-
-# Further testing
-# fpl_gameweek_predictions serves as a master function.
-# Concerned about the duplicated names. Might try to join on player id in future. Done here
-
-# Initiate
-player_details <- fplscrapR::get_player_details()
-
-
-# Find one week at a time.
-# Next - develop to have multiple weeks as we had before - need to focus on index metric not odds to do this though.
-
-# Test - Different from before because of id matching
-test  <- fpl_gameweek_predictions(players = player_details, 8) %>%
-  filter(!(is.na(xP_odds)))
-
-#TODO: Figure out how to deal with NAs... Team not being picked up is breaking the optimisation clearly.
-# Look at this tomorrow please Jimmy
-
-
-test2 <- read.csv("data/Previous week predictions/gw6_players_xP_odds.csv")
-
-sol <- fplBuddy::fpl_optimise(test, test$xP_odds, budget = 83)
-sol <- fpl_optimise_my_team(test, test$xP_odds, budget = 83, transfers = 5)
-
 # Scope to combine both methods into one here..............
 # Fixture / strength index still not influential enough for predicting hauls for me.
 
 
-# Players missing - duplicated names or NAs - unable to join these guys
-# missing <- players_id %>%
-#   filter(name %!in% test2$name)
-
-
-
 #####################################################
+
+#### Performance Review ----
 
 # Use most recent predictions to track (monitor) recent performance
 # Use fpl_performance_comparison() function
 
-
-
 # gw4
-gw4_players_xp <- fpl_performance_comparison(players = player_details, gw = "gw4")
+gw4_players_xp <- fpl_performance_comparison(players = player_details, gw = 4)
 
 # gw5
-gw5_players_xp <- fpl_performance_comparison(players = player_details, gw = "gw5")
+gw5_players_xp <- fpl_performance_comparison(players = player_details, gw = 5)
 
 # gw6
-gw6_players_xp <- fpl_performance_comparison(players = player_details, gw = "gw6")
+gw6_players_xp <- fpl_performance_comparison(players = player_details, gw = 6)
 
+# gw8
+gw8_players_xp <- fpl_performance_comparison(players = player_details, gw_x = 8)
 
-
+# gw9
+gw9_players_xp <- fpl_performance_comparison(players = player_details, gw_x = 9)
 
 
