@@ -4,7 +4,7 @@
 \alias{fpl_my_team}
 \title{Return a list containing all players selected in your team}
 \usage{
-fpl_my_team(user, squad = 11)
+fpl_my_team(user, squad = 11, gw)
 }
 \arguments{
 \item{user}{Unique identifier}

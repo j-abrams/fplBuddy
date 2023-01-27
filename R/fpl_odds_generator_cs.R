@@ -27,9 +27,14 @@ fpl_odds_generator_cs <- function() {
     html_nodes(xpath = xpath) %>%
     html_table()
 
+
   clean_sheet_odds <- odds[[1]] %>%
     # Data processing
-    mutate(clean_sheet_odds = as.numeric(sub("%", "", `Clean Sheet Odds`)) / 100 ) %>%
+    mutate(clean_sheet_odds = ifelse(nchar(`Clean Sheet Odds`) < 7,
+                                     as.numeric(sub("%", "", `Clean Sheet Odds`)) / 100,
+                                     sapply((strsplit(
+                                       (gsub("%", "", gsub(",", "+", gsub(" ", "", `Clean Sheet Odds`)))), "+", fixed = T)),
+                                       function(x) mean(as.numeric(x))) / 100 )) %>%
     select(Team, clean_sheet_odds) %>%
     mutate(Team = case_when(
       Team == "Manchester City" ~ "Man City",
@@ -46,6 +51,8 @@ fpl_odds_generator_cs <- function() {
       Team == "Manch.Utd." ~ "Man Utd",
 
       Team == "Manchester Utd." ~ "Man Utd",
+
+      Team == "Manch. City" ~ "Man City",
       TRUE ~ Team))
 
   return(clean_sheet_odds)

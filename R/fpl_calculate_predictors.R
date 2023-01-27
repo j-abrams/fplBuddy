@@ -40,7 +40,8 @@
 
 fpl_calculate_predictors <- function(players = players,
                                      period, weight = 0.5, strength_index = 1,
-                                     odds_gs = odds_gs_gw9, odds_cs = odds_cs_gw9) {
+                                     odds_gs = odds_gs_gw12,
+                                     odds_cs = odds_cs_gw12) {
 
 
   # Data preparation

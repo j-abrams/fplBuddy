@@ -33,7 +33,7 @@
 
 
 fpl_calculate_xP <- function(data = players_index, predictors = predictors_indexes,
-                             user, gw = 8) {
+                             user, gw = 20) {
 
   # Calculate expected points for the period (xP) - Using historical model
   model <- lm(total_points ~ ., data = fplBuddy::fpl_historical_data_final %>% select(predictors))
@@ -41,6 +41,10 @@ fpl_calculate_xP <- function(data = players_index, predictors = predictors_index
 
   # Take a look at residuals and r squared
   print(summary(model))
+
+  # View Correlation if desired
+  #cor(model$model$total_points, model$model$james_odds_index)
+  #cor(model$model$total_points, model$model$james_cs_index)
 
   test <- data %>%
     select(gameweek) %>%
@@ -67,7 +71,7 @@ fpl_calculate_xP <- function(data = players_index, predictors = predictors_index
   }
 
 
-  my_team <- fpl_my_team(user, squad = 11)
+  my_team <- fpl_my_team(user, squad = 11, gw = gw)
 
   # Join with "my_team" to identify which players are in my team.
   players_xP <- players_collated %>%
@@ -76,3 +80,4 @@ fpl_calculate_xP <- function(data = players_index, predictors = predictors_index
 
   return(players_xP)
 }
+

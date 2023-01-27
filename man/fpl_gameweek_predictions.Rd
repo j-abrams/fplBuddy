@@ -4,7 +4,7 @@
 \alias{fpl_gameweek_predictions}
 \title{Return expected points predictions for a specified gameweek}
 \usage{
-fpl_gameweek_predictions(players = player_details, gameweek = 9)
+fpl_gameweek_predictions(players = player_details, gameweek = 20)
 }
 \arguments{
 \item{gameweek}{Gameweek for which to return predictions for}

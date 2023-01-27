@@ -17,9 +17,8 @@
 # fpl_get_my_team()
 
 # Return list of players in your team - this function is used as an input elsewhere also
-fpl_my_team <- function(user, squad = 11) {
+fpl_my_team <- function(user, squad = 11, gw) {
 
-  gw <- fplr::fpl_get_gameweek_current()$id - 1
 
   # Find team like this
   # Just need to find player id (visit "pick team", then "view gameweek history")

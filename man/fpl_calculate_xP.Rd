@@ -6,7 +6,7 @@
 \usage{
 fpl_calculate_xP(
   data = players_index,
-  predictors = predictors_indexes,
+  predictors = predictors_odds,
   user,
   gw = 8
 )

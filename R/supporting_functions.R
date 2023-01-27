@@ -24,6 +24,13 @@ range01 <- function(x) {
 }
 
 
+# Function for computing the inverse of a normalised range
+# https://stackoverflow.com/questions/39355942/denormalize-data
+denormalize <- function(x, minval, maxval) {
+  x * (maxval - minval) + minval
+}
+
+
 # Sweet function for converting special characters
 #https://stackoverflow.com/questions/68618922/iconv-returns-na-when-given-a-string-with-a-specific-special-character
 str_convert <- function(x) {

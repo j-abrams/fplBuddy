@@ -1,0 +1,657 @@
+"","name","team","position","gameweek","now_cost","xP_odds","xP_index","in_my_team"
+"1","Cédric Alves Soares","Arsenal","DEF",21,4.2,-0.01,0.14,0
+"2","Granit Xhaka","Arsenal","MID",21,5,4.11,4.22,0
+"3","Mohamed Elneny","Arsenal","MID",21,4.1,0.23,0.31,0
+"4","Rob Holding","Arsenal","DEF",21,4.2,0.02,0.26,0
+"5","Thomas Partey","Arsenal","MID",21,4.7,3.65,2.83,0
+"6","Martin Ødegaard","Arsenal","MID",21,6.9,6.02,6.36,0
+"7","Kieran Tierney","Arsenal","DEF",21,4.7,1.5,1.14,0
+"8","Nicolas Pépé","Arsenal","MID",21,5.3,-0.07,0.05,0
+"9","Benjamin White","Arsenal","DEF",21,4.7,2.84,4.13,0
+"10","Eddie Nketiah","Arsenal","FWD",21,6.7,3.78,1.78,0
+"11","Emile Smith Rowe","Arsenal","MID",21,5.6,0.38,0.33,0
+"12","Bukayo Saka","Arsenal","MID",21,8.2,6.11,5.85,1
+"13","Takehiro Tomiyasu","Arsenal","DEF",21,4.2,1.12,1.16,0
+"14","Aaron Ramsdale","Arsenal","GK",21,4.9,3.15,3.68,0
+"15","Gabriel dos Santos Magalhães","Arsenal","DEF",21,5.2,4.31,4.24,0
+"16","Nuno Varela Tavares","Arsenal","DEF",21,4.5,-0.07,0.05,0
+"17","Albert Sambi Lokonga","Arsenal","MID",21,4.3,0.36,0.42,0
+"18","Gabriel Martinelli Silva","Arsenal","MID",21,6.7,6.04,5.9,0
+"19","Pablo Marí Villar","Arsenal","DEF",21,4.5,-0.07,0.05,0
+"20","Lucas Torreira di Pascua","Arsenal","MID",21,4.5,-0.07,0.05,0
+"21","Reiss Nelson","Arsenal","MID",21,4.7,0.02,1.09,0
+"22","Matt Turner","Arsenal","GK",21,3.9,-0.07,0.05,0
+"23","Fábio Ferreira Vieira","Arsenal","MID",21,5.7,0.6,1.25,0
+"24","William Saliba","Arsenal","DEF",21,5.3,3.88,4.29,0
+"25","Marcus Oliveira Alencar","Arsenal","MID",21,4.6,-0.07,0.1,0
+"26","Gabriel Fernando de Jesus","Arsenal","FWD",21,7.9,1.43,4.57,0
+"27","Leandro Trossard","Arsenal","MID",21,6.7,1.8,5,0
+"28","Oleksandr Zinchenko","Arsenal","DEF",21,5,2.89,2.43,0
+"29","Ethan Nwaneri","Arsenal","MID",21,4.5,-0.07,0.11,0
+"30","Lino Sousa","Arsenal","DEF",21,4,-0.07,0.05,0
+"31","Karl Hein","Arsenal","GK",21,4,-0.07,0.05,0
+"32","Amario Cozier-Duberry","Arsenal","MID",21,4.5,-0.07,0.05,0
+"33","Nathan Butler-Oyedeji","Arsenal","FWD",21,4.5,-0.07,0.05,0
+"34","Philippe Coutinho Correia","Aston Villa","MID",21,6.6,2.48,1.18,0
+"35","Emiliano Martínez Romero","Aston Villa","GK",21,4.9,2.78,2.47,0
+"36","Calum Chambers","Aston Villa","DEF",21,4.2,0.14,0.17,0
+"37","Lucas Digne","Aston Villa","DEF",21,4.6,1.99,1.92,0
+"38","Robin Olsen","Aston Villa","GK",21,3.9,0.39,0.4,0
+"39","Morgan Sanson","Aston Villa","MID",21,4.3,0.54,0.07,0
+"40","John McGinn","Aston Villa","MID",21,5.1,1.65,1.93,0
+"41","Kortney Hause","Aston Villa","DEF",21,4.4,-0.07,-0.01,0
+"42","Tyrone Mings","Aston Villa","DEF",21,4.3,3.51,2.27,0
+"43","Ollie Watkins","Aston Villa","FWD",21,7.1,4.18,3.46,0
+"44","Marvelous Nakamba","Aston Villa","MID",21,4.3,-0.07,-0.01,0
+"45","Emiliano Buendía Stati","Aston Villa","MID",21,5.7,4.25,2.92,0
+"46","Matty Cash","Aston Villa","DEF",21,4.6,2.64,1.2,0
+"47","Ezri Konsa Ngoyo","Aston Villa","DEF",21,4.4,3.05,2.03,0
+"48","Leon Bailey","Aston Villa","MID",21,4.5,4.2,3.47,0
+"49","Douglas Luiz Soares de Paulo","Aston Villa","MID",21,4.8,3.17,2.92,0
+"50","Jacob Ramsey","Aston Villa","MID",21,5.2,3.09,2.53,0
+"51","Tim Iroegbunam","Aston Villa","MID",21,4.5,-0.07,-0.01,0
+"52","Diego Carlos Santos Silva","Aston Villa","DEF",21,4.7,0.28,0.16,0
+"53","Anwar El Ghazi","Aston Villa","MID",21,4.8,-0.07,-0.01,0
+"54","Keinan Davis","Aston Villa","FWD",21,5.4,-0.07,-0.01,0
+"55","Boubacar Kamara","Aston Villa","MID",21,4.8,2.07,1.25,0
+"56","Cameron Archer","Aston Villa","FWD",21,4.2,-0.01,0.23,0
+"57","Jaden Philogene-Bidace","Aston Villa","MID",21,4.5,-0.07,-0.01,0
+"58","Frédéric Guilbert","Aston Villa","DEF",21,3.9,-0.07,-0.01,0
+"59","Leander Dendoncker","Aston Villa","MID",21,4.7,0.82,1.06,0
+"60","Ludwig Augustinsson","Aston Villa","DEF",21,4.3,0.08,0.11,0
+"61","Kaine Kesler Hayden","Aston Villa","DEF",21,4,-0.07,-0.01,0
+"62","Ashley Young","Aston Villa","DEF",21,4.4,1.94,2.2,0
+"63","Lamare Bogarde","Aston Villa","DEF",21,4,-0.07,-0.01,0
+"64","Filip Marschall","Aston Villa","GK",21,4,-0.07,-0.01,0
+"65","Alexandre Moreno Lopera","Aston Villa","DEF",21,4.5,0.09,2.37,0
+"66","Adam Smith","Bournemouth","DEF",21,4.4,2.96,2.07,0
+"67","Junior Stanislas","Bournemouth","MID",21,4.8,0.01,0.23,0
+"68","Ryan Fredericks","Bournemouth","DEF",21,4.4,1.09,0.46,0
+"69","David Brooks","Bournemouth","MID",21,5.3,-0.07,0.04,0
+"70","Jamal Lowe","Bournemouth","MID",21,5.2,-0.05,0.12,0
+"71","Kieffer Moore","Bournemouth","FWD",21,5.3,4.14,2.45,0
+"72","Emiliano Marcondes","Bournemouth","MID",21,4.7,-0.06,0.07,0
+"73","Jefferson Lerma Solís","Bournemouth","MID",21,4.8,3.73,2.52,0
+"74","Jack Stacey","Bournemouth","DEF",21,4.3,0.73,0.29,0
+"75","Dominic Solanke","Bournemouth","FWD",21,5.6,1.58,3.27,0
+"76","Lewis Cook","Bournemouth","MID",21,4.9,2.03,2.36,0
+"77","Ben Pearson","Bournemouth","MID",21,4.4,0.87,0.38,0
+"78","Ryan Christie","Bournemouth","MID",21,5.3,4.25,1.84,0
+"79","Philip Billing","Bournemouth","MID",21,5.2,4.21,3.35,0
+"80","Chris Mepham","Bournemouth","DEF",21,4.4,2.98,1.48,0
+"81","Mark Travers","Bournemouth","GK",21,4.3,1.78,1.27,0
+"82","Lloyd Kelly","Bournemouth","DEF",21,4.3,2.04,1.32,0
+"83","Siriki Dembélé","Bournemouth","MID",21,4.7,0.49,0.35,0
+"84","Jaidon Anthony","Bournemouth","MID",21,5.2,2.42,1.56,0
+"85","Jordan Zemura","Bournemouth","DEF",21,4.4,2.72,1.69,0
+"86","Jack Stephens","Bournemouth","DEF",21,4.3,0.2,0.43,0
+"87","Joe Rothwell","Bournemouth","MID",21,4.9,0.65,0.23,0
+"88","Marcus Tavernier","Bournemouth","MID",21,4.7,2.4,3.28,0
+"89","James Hill","Bournemouth","DEF",21,4.4,-0.07,0.04,0
+"90","Norberto Murara Neto","Bournemouth","GK",21,4.5,1.43,1.27,0
+"91","Marcos Senesi","Bournemouth","DEF",21,4.5,3.12,1.43,0
+"92","Christian Saydee","Bournemouth","FWD",21,4.5,-0.07,0.04,0
+"93","Owen Bevan","Bournemouth","DEF",21,4,-0.05,0.08,0
+"94","Cameron Plain","Bournemouth","GK",21,4,-0.07,0.04,0
+"95","Daniel Adu-Adjei","Bournemouth","FWD",21,4.5,-0.07,0.04,0
+"96","Michael Dacosta Gonzalez","Bournemouth","MID",21,4.5,-0.07,0.04,0
+"97","Dominic Sadi","Bournemouth","FWD",21,4.5,-0.07,0.04,0
+"98","Pontus Jansson","Brentford","DEF",21,4.2,0.83,0.77,0
+"99","Christian Nørgaard","Brentford","MID",21,5.3,0.87,1.8,0
+"100","Ivan Toney","Brentford","FWD",21,7.7,5.92,5.88,0
+"101","David Raya Martin","Brentford","GK",21,4.7,2.92,3.75,0
+"102","Sergi Canós Tenés","Brentford","DEF",21,5,0.06,0.22,0
+"103","Josh Dasilva","Brentford","MID",21,4.2,1.87,2.42,0
+"104","Kristoffer Ajer","Brentford","DEF",21,4.5,1.28,0.94,0
+"105","Rico Henry","Brentford","DEF",21,4.5,4.01,2.42,0
+"106","Vitaly Janelt","Brentford","MID",21,5.5,2.93,2.64,0
+"107","Saman Ghoddos","Brentford","MID",21,4.8,0.04,0.4,0
+"108","Mathias Jensen","Brentford","MID",21,4.8,3.62,3.36,0
+"109","Yoane Wissa","Brentford","MID",21,5.3,4.06,2.76,0
+"110","Mads Roerslev Rasmussen","Brentford","DEF",21,4.3,1.81,1.29,0
+"111","Mads Bech Sørensen","Brentford","DEF",21,4.5,-0.04,0.16,0
+"112","Ethan Pinnock","Brentford","DEF",21,4.4,2.36,1.73,0
+"113","Frank Onyeka","Brentford","MID",21,4.8,0.52,0.9,0
+"114","Shandon Baptiste","Brentford","MID",21,4.5,0.51,0.9,0
+"115","Bryan Mbeumo","Brentford","FWD",21,5.8,4.51,3.44,0
+"116","Charlie Goode","Brentford","DEF",21,3.9,-0.07,0,0
+"117","Marcus Forss","Brentford","FWD",21,4.5,-0.07,0,0
+"118","Dominic Thompson","Brentford","DEF",21,4,-0.07,0,0
+"119","Mads Bidstrup","Brentford","MID",21,4.5,-0.07,0,0
+"120","Ellery Balcombe","Brentford","GK",21,4,-0.07,0,0
+"121","Aaron Hickey","Brentford","DEF",21,4.9,1.3,0.68,0
+"122","Keane Lewis-Potter","Brentford","MID",21,5.2,0.5,0.73,0
+"123","Thomas Strakosha","Brentford","GK",21,4.3,-0.07,0,0
+"124","Ben Mee","Brentford","DEF",21,4.7,3.49,3.41,0
+"125","Fin Stevens","Brentford","DEF",21,4,-0.07,0,0
+"126","Halil Dervisoglu","Brentford","FWD",21,4.5,-0.06,0.16,0
+"127","Mikkel Damsgaard","Brentford","MID",21,5.1,0.58,0.6,0
+"128","Mathias Jorgensen","Brentford","DEF",21,4,1.21,1.28,0
+"129","Ryan Trevitt","Brentford","MID",21,4.5,-0.07,0,0
+"130","Matthew Cox","Brentford","GK",21,3.9,-0.07,0,0
+"131","Tristan Crama","Brentford","DEF",21,4,-0.07,0,0
+"132","Yegor Yarmolyuk","Brentford","MID",21,4.5,-0.07,0,0
+"133","Kevin Schade","Brentford","MID",21,5,-0.06,0.75,0
+"134","Adam Lallana","Brighton","MID",21,4.9,2.49,2.4,0
+"135","Jason Steele","Brighton","GK",21,3.9,-0.07,0,0
+"136","Danny Welbeck","Brighton","FWD",21,6.5,2.23,2.54,0
+"137","Pascal Groß","Brighton","MID",21,5.5,5.84,5.06,0
+"138","Lewis Dunk","Brighton","DEF",21,4.7,4.15,2.52,0
+"139","Solly March","Brighton","MID",21,5.2,4.83,5.09,0
+"140","Adam Webster","Brighton","DEF",21,4.5,3.05,1.72,0
+"141","Joël Veltman","Brighton","DEF",21,4.6,2.65,2.47,0
+"142","Robert Sánchez","Brighton","GK",21,4.6,3.19,3.21,0
+"143","Tariq Lamptey","Brighton","DEF",21,4.2,1.03,0.69,0
+"144","Steven Alzate","Brighton","MID",21,4.4,-0.07,0,0
+"145","Alexis Mac Allister","Brighton","MID",21,5.4,4.73,3.62,0
+"146","Jakub Moder","Brighton","MID",21,4.4,-0.07,0,0
+"147","Enock Mwepu","Brighton","MID",21,5.3,0.23,0.58,0
+"148","Jeremy Sarmiento Morante","Brighton","MID",21,4.5,1.01,0.48,0
+"149","Moisés Caicedo Corozo","Brighton","MID",21,5,3.65,2.52,0
+"150","Haydon Roberts","Brighton","DEF",21,4,-0.07,0,0
+"151","Deniz Undav","Brighton","FWD",21,5.1,0.05,0.48,0
+"152","Kaoru Mitoma","Brighton","MID",21,5.1,3.99,2.59,0
+"153","Julio Enciso","Brighton","FWD",21,4.7,0.07,0.38,0
+"154","Kacper Kozlowski","Brighton","MID",21,4.5,-0.07,0,0
+"155","Billy Gilmour","Brighton","MID",21,4.3,0.26,0.27,0
+"156","Kjell Scherpen","Brighton","GK",21,4,-0.07,0,0
+"157","Matt Clarke","Brighton","DEF",21,4,-0.07,0,0
+"158","Jan Paul van Hecke","Brighton","DEF",21,4,-0.06,0.04,0
+"159","Levi Colwill","Brighton","DEF",21,4.4,1.88,0.74,0
+"160","Pervis Estupiñán","Brighton","DEF",21,4.5,3.11,2.2,0
+"161","Evan Ferguson","Brighton","FWD",21,4.6,2.24,1.36,0
+"162","Ed Turns","Brighton","DEF",21,4,-0.07,0,0
+"163","Andrew Moran","Brighton","MID",21,4.5,-0.05,0.1,0
+"164","James Furlong","Brighton","DEF",21,4,-0.07,0,0
+"165","Jack Hinshelwood","Brighton","MID",21,4.5,-0.07,0,0
+"166","Facundo Buonanotte","Brighton","MID",21,4.5,-0.07,0,0
+"167","Carney Chukwuemeka","Chelsea","MID",21,4.3,0.7,0.46,0
+"168","Marc Cucurella Saseta","Chelsea","DEF",21,5.2,2.68,2.03,0
+"169","César Azpilicueta","Chelsea","DEF",21,4.8,2.09,1.75,0
+"170","Thiago Emiliano da Silva","Chelsea","DEF",21,5.5,3.22,2.72,0
+"171","Marcos Alonso","Chelsea","DEF",21,5.3,-0.07,-0.08,0
+"172","Jorge Luiz Frello Filho","Chelsea","MID",21,5.8,2.85,2.14,0
+"173","Ross Barkley","Chelsea","MID",21,4.9,-0.07,-0.08,0
+"174","Mateo Kovacic","Chelsea","MID",21,4.9,2.2,1.26,0
+"175","Kepa Arrizabalaga","Chelsea","GK",21,4.6,1.44,2.31,1
+"176","N'Golo Kanté","Chelsea","MID",21,4.8,0.16,0.22,0
+"177","Hakim Ziyech","Chelsea","MID",21,5.5,2.28,0.83,0
+"178","Ruben Loftus-Cheek","Chelsea","MID",21,5,1.55,1.31,0
+"179","Timo Werner","Chelsea","FWD",21,7.9,-0.07,-0.08,0
+"180","Robert Kenedy Nunes do Nascimento","Chelsea","DEF",21,3.9,-0.07,-0.08,0
+"181","Ben Chilwell","Chelsea","DEF",21,5.8,0.59,1.34,0
+"182","Christian Pulisic","Chelsea","MID",21,5.7,0.72,1.47,0
+"183","Trevoh Chalobah","Chelsea","DEF",21,4.6,1.35,1.31,0
+"184","Mason Mount","Chelsea","MID",21,7.4,4.36,3.83,0
+"185","Callum Hudson-Odoi","Chelsea","MID",21,5.3,-0.07,-0.08,0
+"186","Kai Havertz","Chelsea","FWD",21,7.8,2.85,3.44,0
+"187","Reece James","Chelsea","DEF",21,5.7,0.9,1.41,0
+"188","Edouard Mendy","Chelsea","GK",21,4.8,1.15,1.02,0
+"189","Conor Gallagher","Chelsea","MID",21,5.7,2.29,1.56,0
+"190","Armando Broja","Chelsea","FWD",21,5.3,0.28,0.94,0
+"191","Ethan Ampadu","Chelsea","DEF",21,4.4,-0.07,-0.08,0
+"192","Wesley Fofana","Chelsea","DEF",21,4.3,0.51,0.19,0
+"193","Raheem Sterling","Chelsea","MID",21,9.7,1.4,3.27,0
+"194","Kalidou Koulibaly","Chelsea","DEF",21,5.5,2.02,2.29,0
+"195","Harvey Vale","Chelsea","MID",21,4.5,-0.07,-0.08,0
+"196","Denis Zakaria","Chelsea","MID",21,5,0.31,0.47,0
+"197","Pierre-Emerick Aubameyang","Chelsea","FWD",21,8.5,0.99,1.27,0
+"198","Marcus Bettinelli","Chelsea","GK",21,4,-0.07,-0.08,0
+"199","Omari Hutchinson","Chelsea","MID",21,4.3,-0.04,0.03,0
+"200","Lewis Hall","Chelsea","MID",21,4.4,0.81,1.1,0
+"201","Bashir Humphreys","Chelsea","DEF",21,4.5,-0.07,-0.08,0
+"202","Benoît Badiashile","Chelsea","DEF",21,5,0.81,2.12,0
+"203","João Félix Sequeira","Chelsea","FWD",21,7.5,0,-0.57,0
+"204","Vicente Guaita","Crystal Palace","GK",21,4.4,2.92,2.92,0
+"205","James Tomkins","Crystal Palace","DEF",21,3.9,0.2,-0.04,0
+"206","James McArthur","Crystal Palace","MID",21,4.8,-0.07,-0.03,0
+"207","Christian Benteke","Crystal Palace","FWD",21,5.5,-0.07,-0.03,0
+"208","Nathaniel Clyne","Crystal Palace","DEF",21,4.5,2.29,1.05,0
+"209","Luka Milivojevic","Crystal Palace","MID",21,4.3,0.43,0.6,0
+"210","Jordan Ayew","Crystal Palace","MID",21,5.3,2.52,2.4,0
+"211","Wilfried Zaha","Crystal Palace","MID",21,7.3,5.18,4.2,0
+"212","Jeffrey Schlupp","Crystal Palace","MID",21,4.7,3,1.92,0
+"213","Will Hughes","Crystal Palace","MID",21,4.8,0.63,0.55,0
+"214","Jairo Riedewald","Crystal Palace","MID",21,4.3,-0.01,0.14,0
+"215","Joachim Andersen","Crystal Palace","DEF",21,4.5,2.52,2.39,0
+"216","Odsonne Edouard","Crystal Palace","FWD",21,5.1,2.36,2.46,0
+"217","Marc Guéhi","Crystal Palace","DEF",21,4.4,2.77,1.93,0
+"218","Jean-Philippe Mateta","Crystal Palace","FWD",21,5.1,1.56,0.95,0
+"219","Eberechi Eze","Crystal Palace","MID",21,5.5,3.64,3.87,0
+"220","Tyrick Mitchell","Crystal Palace","DEF",21,4.4,2.6,1.8,0
+"221","Michael Olise","Crystal Palace","MID",21,5.4,3.7,3.47,0
+"222","Jesurun Rak-Sakyi","Crystal Palace","MID",21,4.5,-0.07,-0.03,0
+"223","Malcolm Ebiowei","Crystal Palace","MID",21,4.2,-0.03,0.1,0
+"224","Sam Johnstone","Crystal Palace","GK",21,4.4,-0.07,-0.03,0
+"225","Remi Matthews","Crystal Palace","GK",21,4,-0.07,-0.03,0
+"226","Luke Plange","Crystal Palace","FWD",21,4.5,-0.07,-0.03,0
+"227","Cheick Doucouré","Crystal Palace","MID",21,5,2.82,1.94,0
+"228","Chris Richards","Crystal Palace","DEF",21,4.4,0.89,0.19,0
+"229","Joseph Whitworth","Crystal Palace","GK",21,4,-0.07,-0.03,0
+"230","Kaden Rodney","Crystal Palace","MID",21,4.5,-0.07,-0.03,0
+"231","Kofi Balmer","Crystal Palace","DEF",21,4,-0.07,-0.03,0
+"232","Owen Goodman","Crystal Palace","GK",21,4,-0.07,-0.03,0
+"233","Jack Wells-Morrison","Crystal Palace","MID",21,4.5,-0.07,-0.03,0
+"234","David Ozoh","Crystal Palace","MID",21,4.5,-0.07,-0.03,0
+"235","Neal Maupay","Everton","FWD",21,5.9,1.22,1.33,0
+"236","Asmir Begovic","Everton","GK",21,4,0.09,0.36,0
+"237","Salomón Rondón","Everton","FWD",21,4.9,0.06,0.33,0
+"238","Seamus Coleman","Everton","DEF",21,4.4,1.59,1.23,0
+"239","Andros Townsend","Everton","MID",21,5.4,-0.07,-0.02,0
+"240","Michael Keane","Everton","DEF",21,4.2,-0.03,0.02,0
+"241","Dele Alli","Everton","MID",21,5.3,-0.02,0.07,0
+"242","Jordan Pickford","Everton","GK",21,4.4,2.68,2.95,0
+"243","Allan Marques Loureiro","Everton","MID",21,4.8,-0.07,-0.02,0
+"244","André Tavares Gomes","Everton","MID",21,4.5,-0.07,-0.02,0
+"245","Alex Iwobi","Everton","MID",21,5.4,4.07,3.58,0
+"246","Jean-Philippe Gbamin","Everton","MID",21,4.5,-0.07,-0.02,0
+"247","Yerry Mina","Everton","DEF",21,4.3,0.38,0.52,0
+"248","Demarai Gray","Everton","MID",21,5.3,2.07,3.61,0
+"249","Dominic Calvert-Lewin","Everton","FWD",21,7.9,2.58,1.07,0
+"250","Mason Holgate","Everton","DEF",21,4.3,0.54,0.6,0
+"251","Ben Godfrey","Everton","DEF",21,4.3,0.59,0.24,0
+"252","Vitalii Mykolenko","Everton","DEF",21,4.3,3.69,2.41,0
+"253","Anthony Gordon","Everton","MID",21,5.2,1.4,2.46,0
+"254","Jarrad Branthwaite","Everton","DEF",21,4,-0.07,-0.02,0
+"255","Nathan Patterson","Everton","DEF",21,3.9,1.61,1.28,0
+"256","Niels Nkounkou","Everton","DEF",21,4,-0.07,-0.02,0
+"257","James Tarkowski","Everton","DEF",21,4.2,3.13,2.63,0
+"258","Conor Coady","Everton","DEF",21,4.9,2.96,2.61,0
+"259","Rúben Nascimento Vinagre","Everton","DEF",21,4.3,-0.03,0.07,0
+"260","Dwight McNeil","Everton","MID",21,5.1,2.01,2.07,0
+"261","Stanley Mills","Everton","MID",21,4.4,-0.07,-0.02,0
+"262","Lewis Warrington","Everton","MID",21,4.4,-0.07,-0.02,0
+"263","James Garner","Everton","MID",21,4.5,0.12,0.23,0
+"264","Amadou Onana","Everton","MID",21,4.8,2.71,2.35,0
+"265","Reece Welch","Everton","DEF",21,4,-0.07,-0.02,0
+"266","Idrissa Gueye","Everton","MID",21,4.9,2.26,1.92,0
+"267","Eldin Jakupovic","Everton","GK",21,4,-0.07,-0.02,0
+"268","Kyle John","Everton","DEF",21,4,-0.07,-0.02,0
+"269","Thomas Cannon","Everton","FWD",21,4.5,-0.04,0.42,0
+"270","Isaac Price","Everton","MID",21,4.5,-0.02,0.15,0
+"271","Ellis Simms","Everton","FWD",21,4.5,-0.05,0.75,0
+"272","Bernd Leno","Fulham","GK",21,4.5,2.72,3.2,0
+"273","Shane Duffy","Fulham","DEF",21,4.3,-0.06,0.09,0
+"274","Tom Cairney","Fulham","MID",21,4.7,0.69,1.13,0
+"275","Tim Ream","Fulham","DEF",21,4.5,3.32,2.58,0
+"276","Anthony Knockaert","Fulham","MID",21,4.7,-0.07,-0.06,0
+"277","Neeskens Kebano","Fulham","MID",21,5.4,0.89,1.59,0
+"278","Bobby De Cordova-Reid","Fulham","MID",21,5.5,3.54,3.14,0
+"279","Joe Bryan","Fulham","DEF",21,4.4,-0.07,-0.06,0
+"280","Paulo Gazzaniga Farias","Fulham","GK",21,4,-0.07,-0.06,0
+"281","Terence Kongolo","Fulham","DEF",21,3.9,-0.07,-0.06,0
+"282","Tosin Adarabioyo","Fulham","DEF",21,4.5,1.82,1.36,0
+"283","Aleksandar Mitrovic","Fulham","FWD",21,7,4.12,4.48,1
+"284","Harrison Reed","Fulham","MID",21,4.5,2.47,2.67,0
+"285","Marek Rodák","Fulham","GK",21,4.3,0.24,0.21,0
+"286","Ivan Neves Abreu Cavaleiro","Fulham","MID",21,4.8,-0.07,-0.06,0
+"287","Kenny Tete","Fulham","DEF",21,4.4,2.22,1.98,0
+"288","Josh Onomah","Fulham","MID",21,4.3,-0.05,0.01,0
+"289","Antonee Robinson","Fulham","DEF",21,4.4,2.76,1.92,0
+"290","Rodrigo Muniz Carvalho","Fulham","FWD",21,5.4,-0.07,-0.06,0
+"291","Jay Stansfield","Fulham","FWD",21,4.5,0.04,0.26,0
+"292","João Palhinha Gonçalves","Fulham","MID",21,5,2.7,2.7,0
+"293","Andreas Hoelgebaum Pereira","Fulham","MID",21,4.5,3.13,3.98,0
+"294","Issa Diop","Fulham","DEF",21,4.3,1.64,1.61,0
+"295","Tyrese Francois","Fulham","MID",21,4.4,-0.07,-0.02,0
+"296","Kevin Mbabu","Fulham","DEF",21,4.3,0.22,0.27,0
+"297","Luke Harris","Fulham","MID",21,4.4,-0.05,0.05,0
+"298","Manor Solomon","Fulham","MID",21,4.9,-0.03,0.01,0
+"299","Terry Ablade","Fulham","FWD",21,4.5,-0.07,-0.06,0
+"300","Layvin Kurzawa","Fulham","DEF",21,4.3,0.23,0.02,0
+"301","Willian Borges da Silva","Fulham","MID",21,5.5,2.2,3.53,0
+"302","Carlos Vinícius Alves Morais","Fulham","FWD",21,5.4,0.45,1.38,0
+"303","Stefan Parkes","Fulham","DEF",21,4,-0.07,-0.06,0
+"304","Martial Godo","Fulham","MID",21,4.5,-0.07,-0.06,0
+"305","Kristian Sekularac","Fulham","MID",21,4.5,-0.07,-0.06,0
+"306","Kasper Schmeichel","Leicester","GK",21,5,-0.07,0.03,0
+"307","Jonny Evans","Leicester","DEF",21,4.4,1.33,0.7,0
+"308","Ryan Bertrand","Leicester","DEF",21,3.9,-0.07,0.03,0
+"309","Marc Albrighton","Leicester","MID",21,4.7,1.24,0.43,0
+"310","Jannik Vestergaard","Leicester","DEF",21,3.9,-0.07,0.03,0
+"311","Danny Ward","Leicester","GK",21,4.1,3.25,3.13,0
+"312","Jamie Vardy","Leicester","FWD",21,9.1,3.57,2.38,0
+"313","Ricardo Barbosa Pereira","Leicester","DEF",21,4.3,-0.07,0.03,0
+"314","Daniel Amartey","Leicester","DEF",21,4.2,2.64,2.18,0
+"315","Timothy Castagne","Leicester","DEF",21,4.5,3.82,3.51,0
+"316","Youri Tielemans","Leicester","MID",21,6.2,3.86,3.22,0
+"317","Ayoze Pérez","Leicester","MID",21,4.7,0.44,1.09,0
+"318","James Maddison","Leicester","MID",21,8,3.16,4.35,0
+"319","Kelechi Iheanacho","Leicester","FWD",21,6.1,0.59,1.2,0
+"320","Hamza Choudhury","Leicester","MID",21,4.5,-0.07,0.03,0
+"321","Harvey Barnes","Leicester","MID",21,6.7,5.15,3.7,0
+"322","Wilfred Ndidi","Leicester","MID",21,4.8,1.11,1.01,0
+"323","Kiernan Dewsbury-Hall","Leicester","MID",21,4.9,2.84,3.19,0
+"324","Çaglar Söyüncü","Leicester","DEF",21,4.2,0.05,0.13,0
+"325","James Justin","Leicester","DEF",21,4.2,2.09,2.17,0
+"326","Boubakary Soumaré","Leicester","MID",21,4.4,1.06,1.19,0
+"327","Luke Thomas","Leicester","DEF",21,4.2,1.86,0.65,0
+"328","Patson Daka","Leicester","FWD",21,5.7,1.43,2.4,0
+"329","Lewis Brunt","Leicester","DEF",21,3.9,-0.03,0.07,0
+"330","Daniel Iversen","Leicester","GK",21,3.9,-0.07,0.03,0
+"331","Dennis Praet","Leicester","MID",21,4.8,1.26,0.66,0
+"332","Alex Smithies","Leicester","GK",21,4,-0.07,0.03,0
+"333","Wout Faes","Leicester","DEF",21,4.3,2.71,2.57,0
+"334","Sammy Braybrooke","Leicester","MID",21,4.5,-0.07,0.03,0
+"335","Joe Wormleighton","Leicester","DEF",21,4,-0.07,0.03,0
+"336","Kasey McAteer","Leicester","MID",21,4.5,-0.07,0.03,0
+"337","Liam Cooper","Leeds","DEF",21,4.4,2.34,1.62,0
+"338","Luke Ayling","Leeds","DEF",21,4.5,1.6,0.89,0
+"339","Mateusz Klich","Leeds","MID",21,4.6,0.3,0.69,0
+"340","Adam Forshaw","Leeds","MID",21,4.4,0.45,0.32,0
+"341","Rodrigo Moreno","Leeds","MID",21,6.4,6.23,5.11,0
+"342","Stuart Dallas","Leeds","DEF",21,4.9,-0.07,0.03,0
+"343","Patrick Bamford","Leeds","FWD",21,7.2,1.67,1.43,0
+"344","Diego Llorente","Leeds","DEF",21,4.4,1.33,0.84,0
+"345","Tyler Roberts","Leeds","MID",21,5,-0.07,0.03,0
+"346","Robin Koch","Leeds","DEF",21,4.5,3.53,1.67,0
+"347","Raphael Dias Belloli","Leeds","MID",21,7,-0.07,0.03,0
+"348","Jack Harrison","Leeds","MID",21,5.8,3.64,3.25,0
+"349","Jamie Shackleton","Leeds","MID",21,4.5,-0.07,0.03,0
+"350","Pascal Struijk","Leeds","DEF",21,4.5,3.72,3.07,0
+"351","Kristoffer Klaesson","Leeds","GK",21,3.9,-0.07,0.03,0
+"352","Sam Greenwood","Leeds","FWD",21,4.2,0.86,1.26,0
+"353","Illan Meslier","Leeds","GK",21,4.5,2.93,2.86,0
+"354","Junior Firpo Adames","Leeds","DEF",21,4.5,0.26,0.2,0
+"355","Crysencio Summerville","Leeds","MID",21,4.2,0.69,2.38,0
+"356","Lewis Bate","Leeds","MID",21,4.5,-0.07,0.03,0
+"357","Joe Gelhardt","Leeds","FWD",21,5.1,0.53,1.06,0
+"358","Leo Fuhr Hjelde","Leeds","DEF",21,3.9,-0.07,0.03,0
+"359","Rasmus Kristensen","Leeds","DEF",21,4.8,2.73,1.64,0
+"360","Marc Roca Junqué","Leeds","MID",21,4.8,3.37,2.26,0
+"361","Brenden Aaronson","Leeds","MID",21,5.4,4.47,3.09,0
+"362","Darko Gyabi","Leeds","MID",21,4.3,-0.06,0.1,0
+"363","Luis Sinisterra Lucumí","Leeds","MID",21,6.5,0.95,1.26,0
+"364","Cody Drameh","Leeds","DEF",21,4,0.06,0.09,0
+"365","Joel Robles","Leeds","GK",21,4,-0.07,0.03,0
+"366","Wilfried Gnonto","Leeds","FWD",21,5,3.4,1.57,0
+"367","Mateo Joseph Fernández","Leeds","FWD",21,4.5,-0.07,0.15,0
+"368","Sonny Perkins","Leeds","FWD",21,4.5,-0.07,0.03,0
+"369","Maximilian Wöber","Leeds","DEF",21,4.5,-0.02,1,0
+"370","James Milner","Liverpool","MID",21,4.4,0.96,1.3,0
+"371","Joel Matip","Liverpool","DEF",21,5.9,2.09,0.62,0
+"372","Thiago Alcántara do Nascimento","Liverpool","MID",21,5.2,1.32,1.48,0
+"373","Alex Oxlade-Chamberlain","Liverpool","MID",21,4.9,0.37,1.07,0
+"374","Roberto Firmino","Liverpool","FWD",21,8,1.07,4.35,0
+"375","Virgil van Dijk","Liverpool","DEF",21,6.5,2.88,3.19,0
+"376","Alisson Ramses Becker","Liverpool","GK",21,5.4,3.15,3.75,0
+"377","Fabio Henrique Tavares","Liverpool","MID",21,5.3,2.68,1.78,0
+"378","Mohamed Salah","Liverpool","MID",21,12.8,7.18,6.12,0
+"379","Andrew Robertson","Liverpool","DEF",21,6.8,4.48,3.34,0
+"380","Trent Alexander-Arnold","Liverpool","DEF",21,7.3,5.74,3.52,0
+"381","Joseph Gomez","Liverpool","DEF",21,4.3,2.01,2.04,0
+"382","Naby Keita","Liverpool","MID",21,4.7,0.34,0.36,0
+"383","Diogo Teixeira da Silva","Liverpool","FWD",21,8.8,0.17,0.63,0
+"384","Caoimhin Kelleher","Liverpool","GK",21,4,-0.07,0.11,0
+"385","Ibrahima Konaté","Liverpool","DEF",21,4.8,0.51,0.35,0
+"386","Curtis Jones","Liverpool","MID",21,4.9,0.18,0.5,0
+"387","Konstantinos Tsimikas","Liverpool","DEF",21,4.4,1,1.54,0
+"388","Luis Díaz","Liverpool","MID",21,7.8,0.8,2.31,0
+"389","Harvey Elliott","Liverpool","MID",21,4.9,2.35,2.42,0
+"390","Fábio Freitas Gouveia Carvalho","Liverpool","MID",21,5.2,1.34,1.46,0
+"391","Darwin Núñez Ribeiro","Liverpool","FWD",21,8.8,3.26,3.51,0
+"392","Calvin Ramsay","Liverpool","DEF",21,3.9,-0.07,0.11,0
+"393","Adrián San Miguel del Castillo","Liverpool","GK",21,3.9,-0.07,0.11,0
+"394","Sepp van den Berg","Liverpool","DEF",21,4,-0.07,0.11,0
+"395","Nathaniel Phillips","Liverpool","DEF",21,3.9,0.06,0.27,0
+"396","Stefan Bajcetic","Liverpool","MID",21,4.4,0.93,0.53,0
+"397","Bobby Clark","Liverpool","MID",21,4.5,-0.06,0.16,0
+"398","Arthur Henrique Ramos de Oliveira Melo","Liverpool","MID",21,4.8,-0.07,0.11,0
+"399","Ben Doak","Liverpool","MID",21,4.5,-0.03,0.45,0
+"400","Cody Gakpo","Liverpool","MID",21,7.9,4.54,0.99,0
+"401","Kyle Walker","Man City","DEF",21,4.8,2.36,1.43,0
+"402","Ilkay Gündogan","Man City","MID",21,7.3,3.07,3.28,0
+"403","Kevin De Bruyne","Man City","MID",21,12.5,7.71,6.12,1
+"404","John Stones","Man City","DEF",21,5.4,3.48,2.42,0
+"405","Riyad Mahrez","Man City","MID",21,7.6,5.09,3.54,0
+"406","Jack Grealish","Man City","MID",21,6.8,3.41,3.01,0
+"407","João Cancelo","Man City","DEF",21,7.1,4.64,3.9,0
+"408","Ederson Santana de Moraes","Man City","GK",21,5.4,4.44,3.32,0
+"409","Nathan Aké","Man City","DEF",21,5,3.56,2.15,0
+"410","Aymeric Laporte","Man City","DEF",21,5.7,1.31,0.73,0
+"411","Zack Steffen","Man City","GK",21,4,-0.07,0.23,0
+"412","Bernardo Veiga de Carvalho e Silva","Man City","MID",21,6.8,5.14,3.9,0
+"413","Rúben Gato Alves Dias","Man City","DEF",21,5.9,2.92,2.11,0
+"414","Phil Foden","Man City","MID",21,8.1,4.31,4.65,0
+"415","Rodrigo Hernandez","Man City","MID",21,5.6,4.41,3.52,0
+"416","Cole Palmer","Man City","MID",21,4.3,0.09,0.63,0
+"417","James McAtee","Man City","MID",21,4.5,-0.07,0.23,0
+"418","Erling Haaland","Man City","FWD",21,12.2,8.24,8.39,1
+"419","Julián Álvarez","Man City","FWD",21,6,3.17,2.26,0
+"420","Luke Mbete-Tabu","Man City","DEF",21,3.9,-0.07,0.23,0
+"421","Josh Wilson-Esbrand","Man City","DEF",21,3.8,-0.07,0.23,0
+"422","Liam Delap","Man City","FWD",21,4.4,-0.07,0.23,0
+"423","Stefan Ortega Moreno","Man City","GK",21,3.8,-0.07,0.23,0
+"424","Scott Carson","Man City","GK",21,3.8,-0.07,0.23,0
+"425","Rico Lewis","Man City","DEF",21,3.9,1.69,0.8,1
+"426","Ben Knight","Man City","MID",21,4.5,-0.07,0.23,0
+"427","Manuel Akanji","Man City","DEF",21,5,3.6,2.67,0
+"428","Jack Butland","Man Utd","GK",21,4.4,-0.07,-0.02,0
+"429","Cristiano Ronaldo dos Santos Aveiro","Man Utd","FWD",21,10.2,0.57,1.12,0
+"430","David De Gea Quintana","Man Utd","GK",21,4.9,2.79,3.35,0
+"431","Raphaël Varane","Man Utd","DEF",21,4.8,2.17,2.08,0
+"432","Harry Maguire","Man Utd","DEF",21,4.7,0.76,0.73,0
+"433","Frederico Rodrigues de Paula Santos","Man Utd","MID",21,5.1,1.47,1.73,0
+"434","Luke Shaw","Man Utd","DEF",21,5.2,3.48,3.15,0
+"435","Bruno Borges Fernandes","Man Utd","MID",21,9.9,4.82,4.81,0
+"436","Alex Telles","Man Utd","DEF",21,5,-0.07,-0.02,0
+"437","Marcus Rashford","Man Utd","MID",21,7.2,5.22,5.38,1
+"438","Donny van de Beek","Man Utd","MID",21,5.1,0.15,0.4,0
+"439","Victor Lindelöf","Man Utd","DEF",21,4.2,0.66,0.53,0
+"440","Scott McTominay","Man Utd","MID",21,4.9,1.33,0.83,0
+"441","Eric Bailly","Man Utd","DEF",21,4,-0.07,-0.02,0
+"442","Jadon Sancho","Man Utd","MID",21,7.1,0.89,2.05,0
+"443","Aaron Wan-Bissaka","Man Utd","DEF",21,4.3,1.29,1.17,0
+"444","Diogo Dalot Teixeira","Man Utd","DEF",21,4.7,2.17,2.71,0
+"445","Anthony Elanga","Man Utd","MID",21,4.7,0.68,1.01,0
+"446","Anthony Martial","Man Utd","FWD",21,6.5,1.64,1.64,0
+"447","Facundo Pellistri Rebollo","Man Utd","MID",21,4.3,-0.07,-0.02,0
+"448","Tom Heaton","Man Utd","GK",21,3.9,-0.07,-0.02,0
+"449","Tyrell Malacia","Man Utd","DEF",21,4.2,1.71,1.59,0
+"450","Christian Eriksen","Man Utd","MID",21,6.3,4.18,3.69,0
+"451","Lisandro Martínez","Man Utd","DEF",21,4.5,2.45,2.03,0
+"452","Zidane Iqbal","Man Utd","MID",21,4.3,-0.07,-0.02,0
+"453","Alejandro Garnacho","Man Utd","MID",21,4.2,0.79,0.95,0
+"454","Carlos Henrique Casimiro","Man Utd","MID",21,4.9,1.48,3.58,0
+"455","Antony Matheus dos Santos","Man Utd","MID",21,7.3,3.26,2.84,0
+"456","Matej Kovár","Man Utd","GK",21,4,-0.07,-0.02,0
+"457","Kobbie Mainoo","Man Utd","MID",21,4.5,-0.07,-0.02,0
+"458","Nathan Bishop","Man Utd","GK",21,4,-0.07,-0.02,0
+"459","Shola Shoretire","Man Utd","FWD",21,4.5,-0.07,-0.02,0
+"460","Rhys Bennett","Man Utd","DEF",21,4,-0.07,-0.02,0
+"461","Wout Weghorst","Man Utd","FWD",21,6,1.94,0.99,0
+"462","Jonjo Shelvey","Newcastle","MID",21,4.8,-0.02,0.18,0
+"463","Matt Ritchie","Newcastle","DEF",21,4.2,0.18,0.14,0
+"464","Karl Darlow","Newcastle","GK",21,3.9,-0.07,0.06,0
+"465","Martin Dubravka","Newcastle","GK",21,4.2,-0.07,0.06,0
+"466","Callum Wilson","Newcastle","FWD",21,7.1,1.34,3.37,0
+"467","Kieran Trippier","Newcastle","DEF",21,6.1,5.94,6.71,1
+"468","Dan Burn","Newcastle","DEF",21,4.6,4.11,3.67,0
+"469","Ryan Fraser","Newcastle","MID",21,5.2,0.39,0.66,0
+"470","Jamaal Lascelles","Newcastle","DEF",21,4.3,0.33,0.13,0
+"471","Dwight Gayle","Newcastle","FWD",21,4.5,-0.07,0.06,0
+"472","Paul Dummett","Newcastle","DEF",21,3.9,-0.07,0.06,0
+"473","Javier Manquillo Gaitán","Newcastle","DEF",21,4.2,-0.05,0.1,0
+"474","Emil Krafth","Newcastle","DEF",21,4.3,-0.07,0.1,0
+"475","Jacob Murphy","Newcastle","MID",21,4.2,1.87,1.79,0
+"476","Fabian Schär","Newcastle","DEF",21,5.1,4.45,4.4,0
+"477","Matt Targett","Newcastle","DEF",21,4.8,0.88,1.14,0
+"478","Allan Saint-Maximin","Newcastle","MID",21,6.1,2.98,1.95,0
+"479","Miguel Almirón Rejala","Newcastle","MID",21,5.8,4.96,5.7,1
+"480","Sean Longstaff","Newcastle","MID",21,4.3,3.42,2.86,0
+"481","Joelinton Cássio Apolinário de Lira","Newcastle","MID",21,5.9,4.32,3.25,0
+"482","Joe Willock","Newcastle","MID",21,4.8,3.98,3.65,0
+"483","Bruno Guimarães Rodriguez Moura","Newcastle","MID",21,5.6,2.6,3.3,0
+"484","Jeff Hendrick","Newcastle","MID",21,4.5,-0.07,0.06,0
+"485","Nick Pope","Newcastle","GK",21,5.5,3.77,4.19,0
+"486","Sven Botman","Newcastle","DEF",21,4.5,3.73,3.62,1
+"487","Elliot Anderson","Newcastle","MID",21,4.4,0.08,0.54,0
+"488","Alexander Isak","Newcastle","FWD",21,6.6,1.34,1.69,0
+"489","Loris Karius","Newcastle","GK",21,4,-0.07,0.06,0
+"490","Garang Kuol","Newcastle","MID",21,4.5,-0.07,0.06,0
+"491","Neco Williams","Nott'm Forest","DEF",21,3.9,2.28,1.92,0
+"492","Chris Wood","Nott'm Forest","FWD",21,5.6,0.47,1.57,0
+"493","Harry Arter","Nott'm Forest","MID",21,4.2,-0.07,-0.01,0
+"494","Lyle Taylor","Nott'm Forest","FWD",21,4.2,-0.07,-0.01,0
+"495","Jack Colback","Nott'm Forest","MID",21,4.2,0.45,0.37,0
+"496","Brice Samba","Nott'm Forest","GK",21,4.5,-0.07,-0.01,0
+"497","Carlos Ribeiro Dias","Nott'm Forest","MID",21,4.3,-0.06,0.03,0
+"498","Joe Lolley","Nott'm Forest","MID",21,4.9,-0.07,-0.01,0
+"499","Scott McKenna","Nott'm Forest","DEF",21,4.4,2.81,1.53,0
+"500","Mohamed Dräger","Nott'm Forest","DEF",21,4,-0.07,-0.01,0
+"501","Ryan Yates","Nott'm Forest","MID",21,5,3.02,1.91,0
+"502","Joe Worrall","Nott'm Forest","DEF",21,4.2,2.49,1.54,0
+"503","Jonathan Panzo","Nott'm Forest","DEF",21,4,-0.07,-0.01,0
+"504","Xande Nascimento da Costa Silva","Nott'm Forest","MID",21,5,-0.07,-0.01,0
+"505","Sam Surridge","Nott'm Forest","FWD",21,4.7,0.2,0.54,0
+"506","Richie Laryea","Nott'm Forest","DEF",21,4.5,-0.07,-0.01,0
+"507","Loïc Mbe Soh","Nott'm Forest","DEF",21,4.2,-0.07,-0.01,0
+"508","Brennan Johnson","Nott'm Forest","FWD",21,5.6,1.8,3.06,0
+"509","Alex Mighten","Nott'm Forest","MID",21,4.9,-0.06,0.03,0
+"510","Braian Ojeda Rodríguez","Nott'm Forest","MID",21,4.5,-0.07,-0.01,0
+"511","Taiwo Awoniyi","Nott'm Forest","FWD",21,5.6,2.13,2.45,0
+"512","Dean Henderson","Nott'm Forest","GK",21,4.7,3.1,3.66,0
+"513","Giulian Biancone","Nott'm Forest","DEF",21,4.2,-0.04,0.08,0
+"514","Willy Boly","Nott'm Forest","DEF",21,4.2,1.04,1.06,0
+"515","Morgan Gibbs-White","Nott'm Forest","MID",21,5.5,4.96,3.82,0
+"516","Moussa Niakhaté","Nott'm Forest","DEF",21,4.3,0.25,0.34,0
+"517","Wayne Hennessey","Nott'm Forest","GK",21,3.9,0.11,0.12,0
+"518","Harry Toffolo","Nott'm Forest","DEF",21,4.3,1.5,0.93,0
+"519","Lewis O'Brien","Nott'm Forest","MID",21,4.8,1.07,1.06,0
+"520","Jesse Lingard","Nott'm Forest","MID",21,5.4,1.14,1.47,0
+"521","Orel Mangala","Nott'm Forest","MID",21,4.9,1.98,0.79,0
+"522","Oliver Hammond","Nott'm Forest","MID",21,4.3,-0.07,-0.01,0
+"523","Remo Freuler","Nott'm Forest","MID",21,4.9,3.08,1.64,0
+"524","Cheikhou Kouyaté","Nott'm Forest","MID",21,4.5,0.92,1.46,0
+"525","Emmanuel Dennis","Nott'm Forest","FWD",21,5.7,1,1.17,0
+"526","Renan Augusto Lodi dos Santos","Nott'm Forest","DEF",21,4.3,2.76,1.46,0
+"527","Loïc Badé","Nott'm Forest","DEF",21,4.5,-0.07,-0.01,0
+"528","Serge Aurier","Nott'm Forest","DEF",21,4.6,3.03,3.34,0
+"529","Dale Taylor","Nott'm Forest","FWD",21,4.5,-0.07,-0.01,0
+"530","Gustavo Henrique Furtado Scarpa","Nott'm Forest","MID",21,5,0.04,1,0
+"531","Ainsley Maitland-Niles","Southampton","MID",21,4.8,0.9,0.77,0
+"532","Roméo Lavia","Southampton","MID",21,4.5,2.01,0.98,0
+"533","Theo Walcott","Southampton","MID",21,4.8,0.09,0.17,0
+"534","Alex McCarthy","Southampton","GK",21,4.3,-0.07,0.04,0
+"535","Oriol Romeu Vidal","Southampton","MID",21,4.8,0.04,0.14,0
+"536","Nathan Redmond","Southampton","MID",21,5.3,-0.07,0.08,0
+"537","Mohamed Elyounoussi","Southampton","MID",21,5.2,4.11,2.07,0
+"538","James Ward-Prowse","Southampton","MID",21,6.2,5.52,4.19,0
+"539","Adam Armstrong","Southampton","FWD",21,5.4,2.03,1.93,0
+"540","Kyle Walker-Peters","Southampton","DEF",21,4.4,3.79,1.72,0
+"541","Jan Bednarek","Southampton","DEF",21,4.2,0.42,0.3,0
+"542","Che Adams","Southampton","FWD",21,6.3,1.67,3.72,0
+"543","Nathan Tella","Southampton","MID",21,5,-0.07,0.04,0
+"544","Lyanco Silveira Neves Vojnovic","Southampton","DEF",21,4.4,1.49,0.67,0
+"545","Yan Valery","Southampton","DEF",21,4,0.02,0.05,0
+"546","Will Smallbone","Southampton","MID",21,4.5,-0.07,0.04,0
+"547","Ibrahima Diallo","Southampton","MID",21,4.3,0.73,0.63,0
+"548","Romain Perraud","Southampton","DEF",21,4.2,2.33,2.39,0
+"549","Moussa Djenepo","Southampton","MID",21,5,1.07,1.01,0
+"550","Tino Livramento","Southampton","DEF",21,4.4,-0.07,0.04,0
+"551","Mohammed Salisu","Southampton","DEF",21,4.4,3.59,1.81,0
+"552","Mateusz Lis","Southampton","GK",21,4,-0.07,0.04,0
+"553","Gavin Bazunu","Southampton","GK",21,4.5,3.15,2.3,0
+"554","Armel Bella-Kotchap","Southampton","DEF",21,4.5,1.86,1.12,0
+"555","Willy Caballero","Southampton","GK",21,3.9,-0.07,0.04,0
+"556","Joe Ayodele-Aribo","Southampton","MID",21,5.1,1.59,2.36,0
+"557","Sékou Mara","Southampton","FWD",21,5.3,1.57,0.9,0
+"558","Juan Larios López","Southampton","DEF",21,4,0.21,0.31,0
+"559","Duje Caleta-Car","Southampton","DEF",21,4.5,1.6,1.2,0
+"560","Samuel Edozie","Southampton","MID",21,4.7,1.74,1.19,0
+"561","Lewis Payne","Southampton","MID",21,4.5,-0.07,0.04,0
+"562","Ryan Finnigan","Southampton","MID",21,4.5,-0.07,0.04,0
+"563","Jimmy Morgan","Southampton","FWD",21,4.5,-0.07,0.04,0
+"564","Mislav Orsic","Southampton","MID",21,5.5,0.56,0.04,0
+"565","Carlos Alcaraz","Southampton","MID",21,5,0.9,1.18,0
+"566","Hugo Lloris","Spurs","GK",21,5.5,3.24,2.8,0
+"567","Fraser Forster","Spurs","GK",21,3.9,0.11,0.19,0
+"568","Harry Kane","Spurs","FWD",21,11.7,6.94,7.27,1
+"569","Son Heung-min","Spurs","MID",21,11.6,5.41,3.97,0
+"570","Matt Doherty","Spurs","DEF",21,4.6,2.27,1.78,0
+"571","Eric Dier","Spurs","DEF",21,5.1,3.72,2.9,0
+"572","Lucas Rodrigues Moura da Silva","Spurs","MID",21,5.8,0.06,0.45,0
+"573","Pierre-Emile Højbjerg","Spurs","MID",21,5.5,3.93,3.82,0
+"574","Harry Winks","Spurs","MID",21,4.4,-0.07,0.09,0
+"575","Ryan Sessegnon","Spurs","DEF",21,4.5,2.07,1.88,0
+"576","Steven Bergwijn","Spurs","MID",21,5.5,-0.07,0.09,0
+"577","Sergio Reguilón","Spurs","DEF",21,4.2,-0.07,0.09,0
+"578","Japhet Tanganga","Spurs","DEF",21,3.9,0.16,0.14,0
+"579","Rodrigo Bentancur","Spurs","MID",21,5.4,3.24,3.08,0
+"580","Oliver Skipp","Spurs","MID",21,4.3,0.21,0.51,0
+"581","Joe Rodon","Spurs","DEF",21,4,-0.07,0.09,0
+"582","Cristian Romero","Spurs","DEF",21,4.9,2.76,1.35,0
+"583","Yves Bissouma","Spurs","MID",21,4.7,1.33,1.11,0
+"584","Emerson Leite de Souza Junior","Spurs","DEF",21,4.9,2.49,1.87,0
+"585","Dejan Kulusevski","Spurs","MID",21,7.9,3.82,2.93,0
+"586","Dane Scarlett","Spurs","FWD",21,4.5,-0.07,0.09,0
+"587","Ivan Perišic","Spurs","DEF",21,5.5,4.9,3.17,0
+"588","Pape Matar Sarr","Spurs","MID",21,4.3,0.4,0.24,0
+"589","Brandon Austin","Spurs","GK",21,3.9,-0.07,0.09,0
+"590","Alfie Devine","Spurs","MID",21,4.3,-0.07,0.09,0
+"591","Troy Parrott","Spurs","FWD",21,4.5,-0.07,0.09,0
+"592","Richarlison de Andrade","Spurs","FWD",21,8.4,2.21,1.36,0
+"593","Clément Lenglet","Spurs","DEF",21,4.8,2.15,1.38,0
+"594","Djed Spence","Spurs","DEF",21,4.1,-0.06,0.26,0
+"595","Bryan Gil Salvatierra","Spurs","MID",21,5,0.14,0.51,0
+"596","Danny Ings","West Ham","FWD",21,6.4,2.07,3.12,0
+"597","Lukasz Fabianski","West Ham","GK",21,5,3.53,3.08,0
+"598","Angelo Ogbonna","West Ham","DEF",21,4.4,1.04,0.31,0
+"599","Aaron Cresswell","West Ham","DEF",21,4.8,5.18,2.57,0
+"600","Michail Antonio","West Ham","FWD",21,7,2.84,2.06,0
+"601","Manuel Lanzini","West Ham","MID",21,5.1,0.46,0.27,0
+"602","Kurt Zouma","West Ham","DEF",21,4.4,2.83,2.26,0
+"603","Arthur Masuaku","West Ham","DEF",21,4.5,-0.07,0.05,0
+"604","Vladimir Coufal","West Ham","DEF",21,4.1,3.06,1.38,0
+"605","Saïd Benrahma","West Ham","MID",21,5.6,3.53,2.72,0
+"606","Jarrod Bowen","West Ham","MID",21,8,6.22,3.7,0
+"607","Nikola Vlasic","West Ham","MID",21,5,-0.07,0.05,0
+"608","Declan Rice","West Ham","MID",21,4.7,4.25,2.94,0
+"609","Tomas Soucek","West Ham","MID",21,5.1,3.94,2.67,0
+"610","Pablo Fornals Malla","West Ham","MID",21,5,3.39,1.92,0
+"611","Nayef Aguerd","West Ham","DEF",21,4.8,1.49,0.24,0
+"612","Alphonse Areola","West Ham","GK",21,4.3,0.17,0.13,0
+"613","Flynn Downes","West Ham","MID",21,4.2,0.52,0.55,0
+"614","Gianluca Scamacca","West Ham","FWD",21,6.6,3.09,2.29,0
+"615","Emerson Palmieri dos Santos","West Ham","DEF",21,4,0.86,0.47,0
+"616","Harrison Ashby","West Ham","DEF",21,3.9,-0.07,0.05,0
+"617","Conor Coventry","West Ham","MID",21,4.4,-0.07,0.09,0
+"618","Darren Randolph","West Ham","GK",21,4,-0.07,0.05,0
+"619","Armstrong Oko-Flex","West Ham","MID",21,4.4,-0.07,0.05,0
+"620","Maxwel Cornet","West Ham","MID",21,5.9,0.06,0.3,0
+"621","Thilo Kehrer","West Ham","DEF",21,4.4,3.54,1.89,0
+"622","Lucas Tolentino Coelho de Lima","West Ham","MID",21,5.9,1.31,2.75,0
+"623","Divin Mubama","West Ham","FWD",21,4.5,-0.06,0.23,0
+"624","Craig Dawson","Wolves","DEF",21,4.8,1.17,0.61,0
+"625","Raúl Jiménez","Wolves","FWD",21,6.7,0.57,0.26,0
+"626","Jonathan Castro Otto","Wolves","DEF",21,4.3,1.27,1.37,0
+"627","José Malheiro de Sá","Wolves","GK",21,5,2.21,3.37,0
+"628","Rúben da Silva Neves","Wolves","MID",21,5.4,3.07,3.22,0
+"629","Hwang Hee-chan","Wolves","MID",21,5.7,1.78,0.91,0
+"630","Nélson Cabral Semedo","Wolves","DEF",21,5,1.72,1.28,0
+"631","Daniel Castelo Podence","Wolves","MID",21,5.3,3.05,3.57,0
+"632","Max Kilman","Wolves","DEF",21,4.4,2.63,2.36,0
+"633","Luke Cundle","Wolves","MID",21,4.4,-0.07,-0.2,0
+"634","Pedro Lomba Neto","Wolves","MID",21,4.9,0.68,0.93,0
+"635","Rayan Aït-Nouri","Wolves","DEF",21,4.2,1.2,1.48,0
+"636","Fabio Silva","Wolves","FWD",21,5.5,-0.07,-0.2,0
+"637","Toti António Gomes","Wolves","DEF",21,3.9,0.49,0.33,0
+"638","Francisco Jorge Tomás Oliveira","Wolves","MID",21,5,-0.07,-0.2,0
+"639","Adama Traoré Diarra","Wolves","MID",21,5.4,1.34,1.44,0
+"640","Matija Šarkic","Wolves","GK",21,3.9,-0.07,-0.2,0
+"641","Yerson Mosquera Valdelamar","Wolves","DEF",21,3.9,-0.07,-0.2,0
+"642","João Filipe Iria Santos Moutinho","Wolves","MID",21,4.7,2.24,2.03,0
+"643","Nathan Collins","Wolves","DEF",21,4.4,2.44,1.78,0
+"644","Hugo Bueno López","Wolves","DEF",21,3.9,0.92,1.17,0
+"645","Joseph Hodge","Wolves","MID",21,4.4,0.14,0.01,0
+"646","Connor Ronan","Wolves","MID",21,4.4,-0.07,-0.17,0
+"647","Chem Campbell","Wolves","MID",21,4.4,0.02,0.01,0
+"648","Gonçalo Manuel Ganchinho Guedes","Wolves","MID",21,5.8,1.23,1.48,0
+"649","Matheus Luiz Nunes","Wolves","MID",21,4.8,1.8,2.05,0
+"650","Sasa Kalajdzic","Wolves","FWD",21,5.3,-0.01,-0.14,0
+"651","Diego Da Silva Costa","Wolves","FWD",21,5.4,0.68,0.99,0
+"652","Boubacar Traoré","Wolves","MID",21,4.4,0.41,0.58,0
+"653","Harvey Griffiths","Wolves","MID",21,4.5,-0.07,-0.2,0
+"654","Dexter Lembikisa","Wolves","DEF",21,4,-0.04,-0.05,0
+"655","Matheus Santos Carneiro Da Cunha","Wolves","FWD",21,5.5,0.04,1.21,0
+"656","Mario Lemina","Wolves","MID",21,4.5,0.21,0.71,0

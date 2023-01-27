@@ -15,7 +15,7 @@
 #' @export
 
 
-fpl_gameweek_predictions <- function(players = player_details, gameweek = 9) {
+fpl_gameweek_predictions <- function(players = player_details, gameweek = 20) {
 
   # Testing contents of function arguments to generate helpful error messages to the user
 
@@ -37,6 +37,7 @@ fpl_gameweek_predictions <- function(players = player_details, gameweek = 9) {
   }
 
 
+
   # Get gw_joined
   gw_joined <- fpl_get_gw_joined(players, gameweek)
 
@@ -56,18 +57,25 @@ fpl_gameweek_predictions <- function(players = player_details, gameweek = 9) {
   # rm(list = Filter(exists, c("odds_gs", "odds_cs")))
 
   i <- 0
-
   while (!exists("odds_gs")) {
+    print(i)
+    skip_to_next <- FALSE
     tryCatch(
       odds_gs <- eval(parse(text = paste0("fplBuddy::odds_gs_gw", gameweek - i))),
       error = function(e) {
-        i <- i + 1
+        skip_to_next <<- TRUE
       }
     )
+    if(skip_to_next) {
+      i <- i + 1
+    }
   }
 
+  # Inform user which odds data is being used by default
   print(paste("Defaulting to use odds data for gameweek",  gameweek - i))
 
+
+  # Acquiring odds_gs and odds_cs - saved as data files within the package
   odds_gs <- fpl_odds_generator_gs(odds_gs) %>%
     mutate(gameweek = gameweek)
 
@@ -77,17 +85,17 @@ fpl_gameweek_predictions <- function(players = player_details, gameweek = 9) {
 
   # players_index
   players_index <- fpl_calculate_predictors(
-    players = gw_joined, period = period,
+    players = gw_joined, period = period, weight = 1,
     odds_gs = odds_gs,
     odds_cs = odds_cs)
 
 
-
+  # Expected points (xP) for both odds method and index method
   gw_players_xP_odds <- fpl_calculate_xP(
-    players_index, predictors_odds, user = "6238967", gw = gameweek)
+    players_index, predictors_odds, user = "6238967", gw = gameweek - i - 1)
 
   gw_players_xP_index <- fpl_calculate_xP(
-    players_index, predictors_indexes, user = "6238967", gw = gameweek)
+    players_index, predictors_indexes, user = "6238967", gw = gameweek - i - 1)
 
 
   # Call everything together
@@ -97,6 +105,10 @@ fpl_gameweek_predictions <- function(players = player_details, gameweek = 9) {
     rename("xP_index" = "xP") %>%
     select(name, team, position, gameweek, now_cost, xP_odds, xP_index, in_my_team) #%>%
     #mutate(xP_odds = ifelse(is.na(xP_index), NA, xP_odds))
+
+
+  gw_players_xP <- gw_players_xP %>%
+    filter(!(is.na(gameweek)))
 
   # return
   return(gw_players_xP)

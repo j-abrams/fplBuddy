@@ -1,0 +1,326 @@
+Name,Team,Position,Ownership,Start,Price,Fixture,AnytimeAssist,AnytimeGoal,AnytimeReturn,Reserve
+Haaland,Man City,FWD,85%,90%,£12.2m,Man Utd (a),20%,52%,87%,N
+De Bruyne,Man City,MID,38%,90%,£12.5m,Man Utd (a),35%,18%,77%,N
+Alvarez,Man City,FWD,2%,40%,£6.0m,Man Utd (a),18%,31%,73%,N
+Mahrez,Man City,MID,3%,80%,£7.5m,Man Utd (a),22%,24%,71%,N
+Kane,Spurs,FWD,32%,90%,£11.6m,Arsenal (H),20%,37%,70%,N
+Foden,Man City,MID,15%,40%,£8.2m,Man Utd (a),21%,22%,67%,N
+Grealish,Man City,MID,1%,40%,£6.8m,Man Utd (a),25%,15%,64%,N
+Fernandes,Man Utd,MID,4%,90%,£9.8m,Man City (H),20%,13%,62%,N
+Rashford,Man Utd,MID,41%,90%,£7.0m,Man City (H),14%,23%,62%,N
+Zaha,Crystal Palace,MID,12%,90%,£7.3m,Chelsea (a),16%,21%,62%,N
+Toney,Brentford,FWD,20%,90%,£7.4m,Bournemouth (H),26%,48%,61%,N
+Martial,Man Utd,FWD,5%,70%,£6.6m,Man City (H),17%,17%,60%,N
+Antony,Man Utd,MID,4%,90%,£7.4m,Man City (H),16%,18%,59%,N
+Son,Spurs,MID,6%,90%,£11.6m,Arsenal (H),22%,21%,59%,N
+Bernardo,Man City,MID,7%,90%,£6.8m,Man Utd (a),22%,12%,57%,N
+Isak,Newcastle,FWD,1%,10%,£6.6m,Fulham (H),23%,43%,56%,N
+Edouard,Crystal Palace,FWD,3%,40%,£5.2m,Chelsea (a),11%,21%,56%,N
+Gundogan,Man City,MID,2%,40%,£7.3m,Man Utd (a),17%,12%,55%,N
+Garnacho,Man Utd,MID,1%,10%,£4.2m,Man City (H),16%,17%,55%,N
+Saint-Maximin,Newcastle,MID,3%,30%,£6.2m,Fulham (H),38%,27%,54%,N
+Eriksen,Man Utd,MID,3%,90%,£6.3m,Man City (H),21%,8%,54%,N
+Salah,Liverpool,MID,32%,90%,£12.9m,Brighton (a),26%,36%,53%,N
+Darwin,Liverpool,FWD,14%,30%,£8.9m,Brighton (a),23%,36%,51%,N
+Kulusevski,Spurs,MID,4%,70%,£7.9m,Arsenal (H),22%,17%,51%,N
+Wilson,Newcastle,FWD,5%,60%,£7.2m,Fulham (H),14%,43%,51%,N
+Olise,Crystal Palace,MID,0%,90%,£5.4m,Chelsea (a),16%,10%,51%,N
+Mateta,Crystal Palace,FWD,0%,10%,£5.1m,Chelsea (a),9%,18%,50%,N
+Mbeumo,Brentford,FWD,3%,90%,£5.9m,Bournemouth (H),27%,31%,50%,N
+Coutinho,Aston Villa,MID,3%,30%,£6.6m,Leeds (H),33%,25%,50%,N
+Watkins,Aston Villa,FWD,3%,90%,£7.1m,Leeds (H),23%,33%,49%,N
+Wissa,Brentford,MID,0%,80%,£5.3m,Bournemouth (H),23%,32%,48%,N
+Gakpo,Liverpool,MID,1%,90%,£8.0m,Brighton (a),23%,32%,48%,N
+Elanga,Man Utd,MID,0%,20%,£4.7m,Man City (H),13%,13%,48%,N
+Ziyech,Chelsea,MID,0%,80%,£5.5m,Crystal Palace (H),32%,22%,47%,N
+Cancelo,Man City,DEF,46%,50%,£7.2m,Man Utd (a),21%,6%,47%,N
+Firmino,Liverpool,FWD,3%,30%,£8.0m,Brighton (a),20%,33%,47%,N
+Eze,Crystal Palace,MID,3%,90%,£5.6m,Chelsea (a),13%,13%,47%,N
+Mount,Chelsea,MID,9%,90%,£7.6m,Crystal Palace (H),28%,26%,47%,N
+Ayew,Crystal Palace,MID,0%,80%,£5.3m,Chelsea (a),14%,10%,47%,N
+Sterling,Chelsea,MID,5%,20%,£9.7m,Crystal Palace (H),22%,30%,46%,N
+Wood,Newcastle,FWD,1%,30%,£5.6m,Fulham (H),12%,38%,46%,N
+Buendia,Aston Villa,MID,0%,80%,£5.7m,Leeds (H),29%,23%,46%,N
+Ings,Aston Villa,FWD,2%,30%,£6.4m,Leeds (H),18%,33%,46%,N
+Perisic,Spurs,DEF,21%,80%,£5.5m,Arsenal (H),20%,10%,45%,N
+Aubameyang,Chelsea,FWD,1%,30%,£8.6m,Crystal Palace (H),17%,33%,45%,N
+Saka,Arsenal,MID,21%,80%,£8.1m,Spurs (a),26%,25%,45%,N
+Lewis-Potter,Brentford,MID,0%,20%,£5.2m,Bournemouth (H),21%,29%,44%,N
+Calvert-Lewin,Everton,FWD,0%,70%,£7.9m,Southampton (H),13%,35%,43%,N
+Bryan,Spurs,MID,0%,40%,£5.0m,Arsenal (H),17%,13%,43%,N
+Martinelli,Arsenal,MID,48%,90%,£6.8m,Spurs (a),22%,26%,43%,N
+Vardy,Leicester,FWD,2%,70%,£9.1m,Nott'm Forest (a),17%,31%,43%,N
+Bailey,Aston Villa,MID,4%,60%,£4.5m,Leeds (H),23%,25%,43%,N
+Canos,Brentford,DEF,0%,10%,£5.0m,Bournemouth (H),29%,18%,42%,N
+Barnes,Leicester,MID,2%,90%,£6.8m,Nott'm Forest (a),22%,25%,42%,N
+Havertz,Chelsea,FWD,6%,80%,£7.8m,Crystal Palace (H),17%,29%,41%,N
+Damsgaard,Brentford,MID,0%,20%,£5.1m,Bournemouth (H),23%,23%,41%,N
+Shaw,Man Utd,DEF,16%,90%,£5.1m,Man City (H),18%,4%,41%,N
+R.Sessegnon,Spurs,DEF,1%,30%,£4.5m,Arsenal (H),20%,9%,41%,N
+Odegaard,Arsenal,MID,24%,90%,£6.7m,Spurs (a),23%,22%,41%,N
+Perez,Leicester,MID,0%,40%,£4.7m,Nott'm Forest (a),27%,18%,40%,N
+Murphy,Newcastle,MID,3%,20%,£4.3m,Fulham (H),27%,18%,40%,N
+Awoniyi,Nott'm Forest,FWD,1%,70%,£5.7m,Leicester (H),16%,29%,40%,N
+Carvalho,Liverpool,MID,0%,20%,£5.3m,Brighton (a),19%,26%,40%,N
+Rodrigo,Leeds,MID,7%,90%,£6.3m,Aston Villa (a),17%,28%,40%,N
+Maupay,Everton,FWD,1%,30%,£6.0m,Southampton (H),13%,31%,40%,N
+Gordon,Everton,MID,1%,60%,£5.2m,Southampton (H),20%,25%,40%,N
+McNeil,Everton,MID,0%,60%,£5.2m,Southampton (H),26%,18%,40%,N
+Daka,Leicester,FWD,1%,30%,£5.7m,Nott'm Forest (a),17%,27%,39%,N
+Dennis,Nott'm Forest,FWD,0%,20%,£5.7m,Leicester (H),17%,27%,39%,N
+Nketiah,Arsenal,FWD,3%,90%,£6.6m,Spurs (a),14%,29%,39%,N
+Almiron,Newcastle,MID,42%,90%,£5.9m,Fulham (H),14%,29%,39%,N
+Rodri,Man City,MID,2%,90%,£5.6m,Man Utd (a),12%,9%,39%,N
+Iheanacho,Leicester,FWD,0%,10%,£6.1m,Nott'm Forest (a),16%,27%,39%,N
+Adams,Southampton,FWD,2%,50%,£6.3m,Everton (a),18%,25%,39%,N
+Mitrovic,Fulham,FWD,35%,90%,£7.2m,Newcastle (a),13%,29%,39%,N
+Antonio,West Ham,FWD,2%,40%,£7.0m,Wolves (a),17%,25%,38%,N
+Podence,Wolves,MID,1%,80%,£5.3m,West Ham (H),24%,18%,38%,N
+Gallagher,Chelsea,MID,1%,30%,£5.7m,Crystal Palace (H),23%,19%,38%,N
+Gray,Everton,MID,1%,80%,£5.3m,Southampton (H),20%,22%,38%,N
+Scamacca,West Ham,FWD,1%,60%,£6.6m,Wolves (a),14%,27%,37%,N
+Surridge,Nott'm Forest,FWD,1%,10%,£4.7m,Leicester (H),16%,25%,37%,N
+Bowen,West Ham,MID,2%,90%,£8.0m,Wolves (a),20%,21%,37%,N
+Diego Costa,Wolves,FWD,0%,30%,£5.5m,West Ham (H),16%,24%,36%,N
+Jimenez,Wolves,FWD,0%,20%,£6.7m,West Ham (H),16%,24%,36%,N
+Smith Rowe,Arsenal,MID,0%,20%,£5.6m,Spurs (a),17%,23%,36%,N
+Gross,Brighton,MID,12%,80%,£5.6m,Liverpool (H),24%,15%,36%,N
+Marquinhos,Arsenal,MID,0%,10%,£4.6m,Spurs (a),20%,20%,36%,N
+Welbeck,Brighton,FWD,1%,50%,£6.5m,Liverpool (H),10%,29%,36%,N
+Benrahma,West Ham,MID,1%,50%,£5.6m,Wolves (a),21%,18%,36%,N
+Schlupp,Crystal Palace,MID,0%,70%,£4.7m,Chelsea (a),9%,8%,36%,N
+Cunha,Wolves,FWD,0%,50%,£5.5m,West Ham (H),12%,27%,36%,N
+Adama,Wolves,MID,0%,40%,£5.5m,West Ham (H),22%,17%,35%,N
+Johnson,Nott'm Forest,FWD,1%,90%,£5.6m,Leicester (H),17%,22%,35%,N
+Trippier,Newcastle,DEF,68%,90%,£6.0m,Fulham (H),28%,10%,35%,N
+Christie,Bournemouth,MID,0%,80%,£5.3m,Brentford (a),22%,17%,35%,N
+Hwang,Wolves,MID,0%,60%,£5.7m,West Ham (H),16%,22%,35%,N
+Gibbs-White,Nott'm Forest,MID,0%,90%,£5.5m,Leicester (H),18%,20%,35%,N
+Guedes,Wolves,MID,0%,20%,£5.9m,West Ham (H),18%,20%,35%,N
+Gelhardt,Leeds,FWD,0%,20%,£5.1m,Aston Villa (a),16%,21%,34%,N
+Ferguson,Brighton,FWD,1%,50%,£4.5m,Liverpool (H),12%,24%,34%,N
+Gnonto,Leeds,FWD,0%,90%,£5.0m,Aston Villa (a),16%,20%,33%,N
+Ward-Prowse,Southampton,MID,5%,90%,£6.2m,Everton (a),17%,18%,33%,N
+Mara,Southampton,FWD,0%,60%,£5.3m,Everton (a),14%,21%,32%,N
+Milivojevic,Crystal Palace,MID,0%,10%,£4.3m,Chelsea (a),7%,7%,32%,N
+Bruno Guimaraes,Newcastle,MID,4%,90%,£5.7m,Fulham (H),17%,18%,32%,N
+Joelinton,Newcastle,MID,1%,80%,£5.9m,Fulham (H),17%,18%,32%,N
+Alexander-Arnold,Liverpool,DEF,18%,90%,£7.3m,Brighton (a),25%,9%,32%,N
+Jensen,Brentford,MID,1%,90%,£4.8m,Bournemouth (H),22%,13%,32%,N
+Fabio Vieira,Arsenal,MID,0%,20%,£5.7m,Spurs (a),14%,20%,32%,N
+Mitoma,Brighton,MID,1%,80%,£4.9m,Liverpool (H),18%,17%,32%,N
+Ritchie,Newcastle,DEF,0%,10%,£4.2m,Fulham (H),24%,9%,31%,N
+Hughes,Crystal Palace,MID,0%,30%,£4.8m,Chelsea (a),9%,6%,31%,N
+Elliott,Liverpool,MID,1%,50%,£4.9m,Brighton (a),18%,15%,31%,N
+A.Armstrong,Southampton,FWD,1%,60%,£5.5m,Everton (a),13%,20%,31%,N
+Moore,Bournemouth,FWD,1%,70%,£5.3m,Brentford (a),12%,21%,31%,N
+Chamberlain,Liverpool,MID,0%,70%,£4.9m,Brighton (a),16%,17%,31%,N
+Jorginho,Chelsea,MID,2%,60%,£5.8m,Crystal Palace (H),13%,20%,31%,N
+Ramsey,Aston Villa,MID,1%,40%,£5.2m,Leeds (H),12%,20%,30%,N
+Aaronson,Leeds,MID,1%,90%,£5.5m,Aston Villa (a),20%,13%,30%,N
+Lanzini,West Ham,MID,0%,10%,£5.1m,Wolves (a),17%,14%,29%,N
+Fornals,West Ham,MID,0%,60%,£5.0m,Wolves (a),16%,15%,29%,N
+Paqueta,West Ham,MID,1%,90%,£5.9m,Wolves (a),16%,15%,29%,N
+Solanke,Bournemouth,FWD,4%,80%,£5.7m,Brentford (a),11%,20%,29%,N
+McTominay,Man Utd,MID,0%,20%,£4.9m,Man City (H),6%,8%,29%,N
+Hojbjerg,Spurs,MID,3%,90%,£5.5m,Arsenal (H),12%,7%,29%,N
+Digne,Aston Villa,DEF,2%,90%,£4.6m,Leeds (H),23%,7%,29%,N
+Casemiro,Man Utd,MID,3%,90%,£4.9m,Man City (H),6%,7%,28%,N
+De Cordova-Reid,Fulham,MID,0%,90%,£5.5m,Newcastle (a),16%,14%,28%,N
+Vinicius,Fulham,FWD,0%,10%,£5.4m,Newcastle (a),10%,20%,28%,N
+Wilson,Fulham,MID,0%,40%,£5.7m,Newcastle (a),16%,14%,28%,N
+Greenwood,Leeds,FWD,13%,40%,£4.2m,Aston Villa (a),16%,14%,28%,N
+Fred,Man Utd,MID,0%,20%,£5.1m,Man City (H),6%,8%,28%,N
+Lewis,Man City,DEF,1%,70%,£3.9m,Man Utd (a),9%,7%,28%,N
+Chukwuemeka,Chelsea,MID,0%,30%,£4.3m,Crystal Palace (H),14%,15%,28%,N
+Harrison,Leeds,MID,2%,60%,£5.8m,Aston Villa (a),14%,15%,28%,N
+Tielemans,Leicester,MID,2%,90%,£6.2m,Nott'm Forest (a),14%,15%,28%,N
+Neves,Wolves,MID,2%,90%,£5.5m,West Ham (H),13%,17%,28%,N
+March,Brighton,MID,1%,90%,£5.0m,Liverpool (H),19%,11%,27%,N
+Dasilva,Brentford,MID,4%,50%,£4.2m,Bournemouth (H),12%,17%,27%,N
+Sanson,Aston Villa,MID,0%,10%,£4.3m,Leeds (H),17%,13%,27%,N
+Albrighton,Leicester,MID,0%,70%,£4.7m,Nott'm Forest (a),20%,9%,27%,N
+Anthony,Bournemouth,MID,0%,80%,£5.2m,Brentford (a),14%,14%,27%,N
+James,Fulham,MID,0%,30%,£6.0m,Newcastle (a),16%,13%,27%,N
+Edozie,Southampton,MID,0%,10%,£4.7m,Everton (a),16%,13%,27%,N
+Praet,Leicester,MID,0%,50%,£4.8m,Nott'm Forest (a),17%,12%,27%,N
+Billing,Bournemouth,MID,1%,90%,£5.2m,Brentford (a),13%,15%,27%,N
+C.Doucoure,Crystal Palace,MID,0%,90%,£5.0m,Chelsea (a),7%,5%,26%,N
+Young,Aston Villa,DEF,1%,80%,£4.4m,Leeds (H),16%,12%,26%,N
+Emerson Royal,Spurs,DEF,2%,40%,£4.9m,Arsenal (H),12%,5%,26%,N
+Doherty,Spurs,DEF,1%,60%,£4.6m,Arsenal (H),10%,7%,25%,N
+Aribo,Southampton,MID,0%,20%,£5.2m,Everton (a),9%,17%,25%,N
+Xhaka,Arsenal,MID,3%,90%,£5.0m,Spurs (a),14%,13%,25%,N
+Willock,Newcastle,MID,1%,90%,£4.8m,Fulham (H),14%,13%,25%,N
+Sarmiento,Brighton,MID,0%,50%,£4.5m,Liverpool (H),10%,17%,25%,N
+Cucurella,Chelsea,DEF,11%,60%,£5.2m,Crystal Palace (H),20%,5%,25%,N
+Bentancur,Spurs,MID,0%,50%,£5.4m,Arsenal (H),17%,6%,25%,N
+Elyounoussi,Southampton,MID,0%,50%,£5.2m,Everton (a),13%,13%,25%,N
+Hall,Chelsea,MID,0%,40%,£4.4m,Crystal Palace (H),17%,8%,24%,N
+Mac Allister,Brighton,MID,3%,50%,£5.4m,Liverpool (H),10%,15%,24%,N
+Kristensen,Leeds,DEF,0%,50%,£4.8m,Aston Villa (a),20%,5%,24%,N
+Cairney,Fulham,MID,0%,20%,£4.7m,Newcastle (a),16%,9%,24%,N
+Robertson,Liverpool,DEF,5%,80%,£6.9m,Brighton (a),18%,7%,24%,N
+Zakaria,Chelsea,MID,0%,20%,£5.0m,Crystal Palace (H),14%,11%,24%,N
+A.Doucoure,Everton,MID,0%,70%,£5.3m,Southampton (H),13%,12%,23%,N
+Willian,Fulham,MID,0%,70%,£5.5m,Newcastle (a),13%,12%,23%,N
+Walker,Man City,DEF,4%,50%,£4.8m,Man Utd (a),9%,3%,23%,N
+Andreas,Fulham,MID,24%,90%,£4.6m,Newcastle (a),16%,8%,23%,N
+Davies,Spurs,DEF,1%,50%,£4.8m,Arsenal (H),10%,5%,23%,N
+N.Williams,Nott'm Forest,DEF,19%,10%,£4.0m,Leicester (H),16%,8%,23%,N
+S.Longstaff,Newcastle,MID,1%,90%,£4.4m,Fulham (H),12%,12%,22%,N
+Kovacic,Chelsea,MID,0%,80%,£4.9m,Crystal Palace (H),14%,9%,22%,N
+Norgaard,Brentford,MID,0%,80%,£5.3m,Bournemouth (H),13%,11%,22%,N
+McGinn,Aston Villa,MID,1%,80%,£5.1m,Leeds (H),22%,0%,22%,N
+Keita,Liverpool,MID,0%,20%,£4.7m,Brighton (a),10%,13%,22%,N
+Rothwell,Bournemouth,MID,0%,10%,£4.9m,Brentford (a),16%,7%,22%,N
+Lallana,Brighton,MID,0%,60%,£4.9m,Liverpool (H),10%,13%,22%,N
+Tsimikas,Liverpool,DEF,0%,20%,£4.5m,Brighton (a),16%,7%,22%,N
+Laporte,Man City,DEF,1%,60%,£5.7m,Man Utd (a),5%,6%,21%,N
+Stones,Man City,DEF,3%,50%,£5.4m,Man Utd (a),6%,5%,21%,N
+Toffolo,Nott'm Forest,DEF,0%,20%,£4.3m,Leicester (H),17%,5%,21%,N
+Douglas Luiz,Aston Villa,MID,1%,90%,£4.8m,Leeds (H),12%,11%,21%,N
+Tierney,Arsenal,DEF,1%,40%,£4.7m,Spurs (a),17%,5%,21%,N
+Zinchenko,Arsenal,DEF,7%,60%,£5.0m,Spurs (a),14%,8%,21%,N
+Partey,Arsenal,MID,1%,90%,£4.8m,Spurs (a),13%,9%,21%,N
+Cash,Aston Villa,DEF,4%,20%,£4.6m,Leeds (H),13%,9%,21%,N
+Freuler,Nott'm Forest,MID,0%,90%,£4.9m,Leicester (H),13%,9%,21%,N
+Malacia,Man Utd,DEF,2%,30%,£4.2m,Man City (H),8%,3%,21%,N
+Augustinsson,Aston Villa,DEF,0%,10%,£4.3m,Leeds (H),17%,5%,21%,N
+Cresswell,West Ham,DEF,2%,70%,£4.8m,Wolves (a),17%,5%,21%,N
+Janelt,Brentford,MID,0%,80%,£5.5m,Bournemouth (H),10%,12%,21%,N
+Moutinho,Wolves,MID,0%,90%,£4.7m,West Ham (H),16%,5%,21%,N
+Henry,Brentford,DEF,1%,90%,£4.5m,Bournemouth (H),13%,8%,20%,N
+O'Brien,Nott'm Forest,MID,0%,20%,£4.8m,Leicester (H),13%,8%,20%,N
+Ake,Man City,DEF,2%,90%,£5.0m,Man Utd (a),5%,5%,20%,N
+Lamptey,Brighton,DEF,1%,40%,£4.2m,Liverpool (H),14%,7%,20%,N
+Matheus,Wolves,MID,0%,90%,£4.8m,West Ham (H),12%,9%,20%,N
+Thiago,Liverpool,MID,1%,80%,£5.2m,Brighton (a),10%,11%,19%,N
+Skipp,Spurs,MID,0%,20%,£4.3m,Arsenal (H),7%,6%,19%,N
+Tanganga,Spurs,DEF,3%,20%,£3.9m,Arsenal (H),8%,4%,19%,N
+Soucek,West Ham,MID,1%,90%,£5.2m,Wolves (a),8%,12%,19%,N
+Djenepo,Southampton,MID,0%,70%,£5.0m,Everton (a),9%,11%,19%,N
+Mangala,Nott'm Forest,MID,0%,70%,£4.9m,Leicester (H),13%,7%,19%,N
+Richards,Crystal Palace,DEF,0%,20%,£4.4m,Chelsea (a),5%,3%,19%,N
+Mykolenko,Everton,DEF,1%,90%,£4.4m,Southampton (H),13%,6%,18%,N
+Lavia,Southampton,MID,0%,70%,£4.5m,Everton (a),13%,6%,18%,N
+Maguire,Man Utd,DEF,0%,40%,£4.7m,Man City (H),3%,6%,18%,N
+Fabinho,Liverpool,MID,1%,70%,£5.3m,Brighton (a),9%,10%,18%,N
+Gilmour,Brighton,MID,0%,10%,£4.3m,Liverpool (H),9%,9%,18%,N
+Onana,Everton,MID,0%,90%,£4.8m,Southampton (H),9%,9%,18%,N
+Rice,West Ham,MID,3%,90%,£4.8m,Wolves (a),10%,8%,18%,N
+Roerslev,Brentford,DEF,0%,80%,£4.3m,Bournemouth (H),13%,5%,18%,N
+Azpilicueta,Chelsea,DEF,2%,80%,£4.8m,Crystal Palace (H),13%,5%,18%,N
+Aurier,Nott'm Forest,DEF,0%,90%,£4.5m,Leicester (H),13%,5%,18%,N
+Jonny,Wolves,DEF,0%,20%,£4.4m,West Ham (H),13%,5%,18%,N
+Wan-Bissaka,Man Utd,DEF,1%,90%,£4.3m,Man City (H),6%,3%,18%,N
+Caicedo,Brighton,MID,0%,90%,£5.0m,Liverpool (H),9%,10%,18%,N
+Yates,Nott'm Forest,MID,0%,90%,£5.0m,Leicester (H),7%,11%,18%,N
+Akanji,Man City,DEF,2%,80%,£5.0m,Man Utd (a),5%,4%,17%,N
+Castagne,Leicester,DEF,10%,90%,£4.6m,Nott'm Forest (a),12%,6%,17%,N
+Perraud,Southampton,DEF,1%,70%,£4.3m,Everton (a),11%,7%,17%,N
+Henderson,Liverpool,MID,1%,60%,£5.3m,Brighton (a),9%,8%,17%,N
+Downes,West Ham,MID,0%,10%,£4.3m,Wolves (a),9%,8%,17%,N
+Renan Lodi,Nott'm Forest,DEF,0%,80%,£4.3m,Leicester (H),10%,7%,16%,N
+Firpo,Leeds,DEF,0%,10%,£4.5m,Aston Villa (a),11%,5%,16%,N
+Dembele,Bournemouth,MID,0%,20%,£4.7m,Brentford (a),0%,15%,16%,N
+Kehrer,West Ham,DEF,0%,70%,£4.5m,Wolves (a),11%,5%,15%,N
+Walker-Peters,Southampton,DEF,1%,90%,£4.4m,Everton (a),12%,3%,15%,N
+Gueye,Everton,MID,0%,90%,£4.9m,Southampton (H),9%,7%,15%,N
+Bissouma,Spurs,MID,0%,40%,£4.7m,Arsenal (H),7%,6%,15%,N
+Roca,Leeds,MID,0%,90%,£4.8m,Aston Villa (a),10%,5%,15%,N
+Zemura,Bournemouth,DEF,0%,90%,£4.4m,Brentford (a),9%,6%,15%,N
+Romero,Spurs,DEF,1%,80%,£4.9m,Arsenal (H),5%,5%,15%,N
+Elneny,Arsenal,MID,1%,10%,£4.2m,Spurs (a),7%,8%,15%,N
+Tete,Fulham,DEF,0%,90%,£4.4m,Newcastle (a),12%,3%,15%,N
+Zanka,Brentford,DEF,1%,30%,£4.0m,Bournemouth (H),5%,10%,14%,N
+Schar,Newcastle,DEF,13%,90%,£5.0m,Fulham (H),5%,10%,14%,N
+Sambi,Arsenal,MID,0%,10%,£4.3m,Spurs (a),7%,7%,14%,N
+Bajcetic,Liverpool,MID,0%,10%,£4.4m,Brighton (a),7%,8%,14%,N
+Koulibaly,Chelsea,DEF,7%,90%,£5.5m,Crystal Palace (H),5%,9%,14%,N
+Forshaw,Leeds,MID,0%,20%,£4.4m,Aston Villa (a),9%,5%,14%,N
+Cook,Bournemouth,MID,0%,90%,£4.9m,Brentford (a),10%,4%,14%,N
+Chalobah,Chelsea,DEF,1%,50%,£4.6m,Crystal Palace (H),6%,8%,14%,N
+Coufal,West Ham,DEF,1%,40%,£4.1m,Wolves (a),10%,4%,14%,N
+Collins,Wolves,DEF,1%,90%,£4.4m,West Ham (H),7%,7%,14%,N
+Tomiyasu,Arsenal,DEF,1%,20%,£4.2m,Spurs (a),10%,4%,14%,N
+Mitchell,Crystal Palace,DEF,1%,60%,£4.4m,Chelsea (a),5%,2%,13%,N
+Clyne,Crystal Palace,DEF,0%,70%,£4.5m,Chelsea (a),4%,2%,13%,N
+Lerma,Bournemouth,MID,0%,90%,£4.8m,Brentford (a),8%,6%,13%,N
+Chambers,Aston Villa,DEF,0%,20%,£4.2m,Leeds (H),7%,7%,13%,N
+Kamara,Aston Villa,MID,0%,90%,£4.8m,Leeds (H),7%,7%,13%,N
+Andersen,Crystal Palace,DEF,2%,90%,£4.5m,Chelsea (a),3%,4%,13%,N
+Maitland-Niles,Southampton,MID,0%,10%,£4.8m,Everton (a),9%,5%,13%,N
+Colback,Nott'm Forest,MID,1%,30%,£4.2m,Leicester (H),8%,5%,13%,N
+Palhinha,Fulham,MID,0%,90%,£5.0m,Newcastle (a),7%,6%,13%,N
+Mee,Brentford,DEF,7%,80%,£4.6m,Bournemouth (H),5%,8%,13%,N
+Estupinan,Brighton,DEF,1%,90%,£4.5m,Liverpool (H),8%,5%,13%,N
+Adams,Leeds,MID,0%,90%,£4.9m,Aston Villa (a),9%,3%,13%,N
+Ward,Crystal Palace,DEF,0%,70%,£4.5m,Chelsea (a),5%,2%,13%,N
+Ajer,Brentford,DEF,0%,20%,£4.5m,Bournemouth (H),5%,8%,12%,N
+Dier,Spurs,DEF,7%,60%,£5.2m,Arsenal (H),3%,5%,12%,N
+Fredericks,Bournemouth,DEF,0%,20%,£4.4m,Brentford (a),9%,3%,12%,N
+Reed,Fulham,MID,1%,90%,£4.5m,Newcastle (a),7%,5%,12%,N
+Thiago Silva,Chelsea,DEF,8%,80%,£5.4m,Crystal Palace (H),6%,6%,12%,N
+Ayling,Leeds,DEF,0%,50%,£4.5m,Aston Villa (a),7%,5%,12%,N
+Pearson,Bournemouth,MID,0%,10%,£4.4m,Brentford (a),8%,4%,12%,N
+Johnson,West Ham,DEF,0%,30%,£4.4m,Wolves (a),9%,3%,12%,N
+Varane,Man Utd,DEF,3%,90%,£4.8m,Man City (H),3%,3%,12%,N
+Aguerd,West Ham,DEF,0%,70%,£4.8m,Wolves (a),5%,7%,12%,N
+Sanchez,Spurs,DEF,1%,30%,£4.3m,Arsenal (H),3%,4%,12%,N
+Mina,Everton,DEF,0%,20%,£4.3m,Southampton (H),3%,8%,12%,N
+Lindelof,Man Utd,DEF,0%,10%,£4.2m,Man City (H),3%,3%,12%,N
+Semedo,Wolves,DEF,0%,80%,£5.0m,West Ham (H),7%,4%,12%,N
+Mings,Aston Villa,DEF,4%,90%,£4.3m,Leeds (H),5%,7%,12%,N
+Colwill,Brighton,DEF,0%,90%,£4.4m,Liverpool (H),6%,6%,11%,N
+Guehi,Crystal Palace,DEF,1%,90%,£4.4m,Chelsea (a),2%,4%,11%,N
+Lenglet,Spurs,DEF,0%,60%,£4.8m,Arsenal (H),3%,4%,11%,N
+Martinez,Man Utd,DEF,6%,50%,£4.5m,Man City (H),3%,3%,11%,N
+Thomas,Leicester,DEF,0%,90%,£4.2m,Nott'm Forest (a),7%,4%,11%,N
+Gabriel,Arsenal,DEF,14%,90%,£5.2m,Spurs (a),5%,7%,11%,N
+Konsa,Aston Villa,DEF,0%,90%,£4.4m,Leeds (H),5%,7%,11%,N
+Struijk,Leeds,DEF,1%,80%,£4.5m,Aston Villa (a),5%,6%,11%,N
+Dawson,West Ham,DEF,0%,80%,£4.8m,Wolves (a),3%,8%,11%,N
+Gomez,Liverpool,DEF,1%,40%,£4.4m,Brighton (a),6%,5%,11%,N
+Diallo,Southampton,MID,0%,60%,£4.3m,Everton (a),6%,5%,11%,N
+McKenna,Nott'm Forest,DEF,0%,20%,£4.4m,Leicester (H),6%,5%,11%,N
+Matip,Liverpool,DEF,1%,90%,£5.9m,Brighton (a),4%,7%,11%,N
+Tarkowski,Everton,DEF,1%,90%,£4.3m,Southampton (H),5%,6%,11%,N
+Konate,Liverpool,DEF,1%,80%,£4.8m,Brighton (a),4%,7%,11%,N
+Lascelles,Newcastle,DEF,0%,20%,£4.3m,Fulham (H),4%,7%,10%,N
+Faes,Leicester,DEF,0%,90%,£4.4m,Nott'm Forest (a),5%,6%,10%,N
+Botman,Newcastle,DEF,5%,90%,£4.5m,Fulham (H),5%,6%,10%,N
+Burn,Newcastle,DEF,2%,90%,£4.5m,Fulham (H),5%,6%,10%,N
+Dunk,Brighton,DEF,4%,90%,£4.7m,Liverpool (H),4%,6%,10%,N
+Pinnock,Brentford,DEF,0%,90%,£4.4m,Bournemouth (H),5%,5%,10%,N
+Coady,Everton,DEF,4%,80%,£5.0m,Southampton (H),3%,7%,10%,N
+Coleman,Everton,DEF,0%,70%,£4.5m,Southampton (H),6%,4%,10%,N
+Veltman,Brighton,DEF,3%,60%,£4.6m,Liverpool (H),5%,5%,10%,N
+Kilman,Wolves,DEF,2%,90%,£4.4m,West Ham (H),5%,5%,10%,N
+Kurzawa,Fulham,DEF,0%,60%,£4.3m,Newcastle (a),5%,5%,10%,N
+Godfrey,Everton,DEF,0%,50%,£4.3m,Southampton (H),3%,6%,9%,N
+Saliba,Arsenal,DEF,35%,90%,£5.3m,Spurs (a),3%,6%,9%,N
+Mendy,Leicester,MID,0%,90%,£4.3m,Nott'm Forest (a),5%,4%,9%,N
+Llorente,Leeds,DEF,0%,20%,£4.4m,Aston Villa (a),3%,6%,9%,N
+White,Arsenal,DEF,14%,90%,£4.7m,Spurs (a),5%,3%,9%,N
+Tosin,Fulham,DEF,0%,90%,£4.5m,Newcastle (a),6%,3%,9%,N
+Lyanco,Southampton,DEF,0%,60%,£4.4m,Everton (a),3%,5%,9%,N
+Toti,Wolves,DEF,2%,20%,£3.9m,West Ham (H),3%,5%,9%,N
+Holding,Arsenal,DEF,0%,10%,£4.2m,Spurs (a),3%,5%,8%,N
+Senesi,Bournemouth,DEF,0%,90%,£4.5m,Brentford (a),5%,3%,8%,N
+Ogbonna,West Ham,DEF,0%,20%,£4.4m,Wolves (a),3%,4%,8%,N
+Soyuncu,Leicester,DEF,0%,20%,£4.2m,Nott'm Forest (a),3%,4%,8%,N
+Mbabu,Fulham,DEF,0%,10%,£4.3m,Newcastle (a),5%,3%,8%,N
+Cooper,Leeds,DEF,0%,70%,£4.4m,Aston Villa (a),3%,4%,7%,N
+Cook,Nott'm Forest,DEF,0%,20%,£4.4m,Leicester (H),3%,4%,7%,N
+Worrall,Nott'm Forest,DEF,0%,80%,£4.2m,Leicester (H),3%,4%,7%,N
+Caleta-Car,Southampton,DEF,0%,80%,£4.5m,Everton (a),3%,4%,7%,N
+Koch,Leeds,DEF,0%,80%,£4.5m,Aston Villa (a),3%,3%,7%,N
+Salisu,Southampton,DEF,0%,90%,£4.4m,Everton (a),3%,3%,7%,N
+Diop,Fulham,DEF,0%,40%,£4.3m,Newcastle (a),3%,3%,7%,N
+Ream,Fulham,DEF,2%,90%,£4.5m,Newcastle (a),3%,3%,6%,N
+Amartey,Leicester,DEF,1%,90%,£4.2m,Nott'm Forest (a),3%,3%,6%,N
+Emerson,West Ham,DEF,1%,20%,£4.0m,Wolves (a),0%,5%,5%,N
+Kelly,Bournemouth,DEF,1%,80%,£4.3m,Brentford (a),2%,3%,5%,N
+Mepham,Bournemouth,DEF,0%,50%,£4.4m,Brentford (a),2%,3%,5%,N
+Stacey,Bournemouth,DEF,0%,20%,£4.3m,Brentford (a),0%,3%,3%,N

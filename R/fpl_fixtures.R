@@ -27,12 +27,45 @@
 # gameweek1 <- 6
 # gameweek2 <- 7
 
+
+
+
+
 fpl_fixtures <- function(gameweek1, gameweek2) {
+
+
+  # Fix for strength index.
+  # Had not been updated in a while -
+  # strength index now computes relative to teams current position in the table
+  table <-
+    read_html("https://www.bbc.co.uk/sport/football/tables") %>%
+    html_table() %>%
+    as.data.frame() %>%
+    select(Team, Pts) %>%
+    head(-1) %>%
+    arrange(Team) %>%
+    mutate(id = 1:20) %>%
+    select(-Team)
 
   # Team data acquired via fplr package
   teams <- fplr::fpl_get_teams() %>%
-    select(id, name, strength, strength_overall_home, strength_overall_away)
+    select(id, name, strength, strength_overall_home, strength_overall_away) %>%
   # Can we learn anything from strength_home, strength_away
+    left_join(table, by = "id")
+
+  max_strength_home <- max(teams$strength_overall_home)
+  min_strength_home <- min(teams$strength_overall_home)
+
+  max_strength_away <- max(teams$strength_overall_away)
+  min_strength_away <- min(teams$strength_overall_away)
+
+  teams <- teams %>%
+    mutate(strength_overall_home = denormalize(range01(as.numeric(Pts)),
+                                               min_strength_home, max_strength_home)) %>%
+    mutate(strength_overall_away = denormalize(range01(as.numeric(Pts)),
+                                               min_strength_away, max_strength_away)) %>%
+    select(-Pts)
+
 
 
   # Specifying fixtures and fixture difficulty by joining with teams

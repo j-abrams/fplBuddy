@@ -18,6 +18,9 @@ library(data.table)
 library(stringr)
 library(reticulate)
 library(jsonlite)
+library(tidyr)
+library(ggplot2)
+
 
 #devtools::install_github("ewenme/fplr", force = T)
 #devtools::install_github("wiscostret/fplscrapR", force = T)

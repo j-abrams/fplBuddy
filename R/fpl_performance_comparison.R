@@ -17,12 +17,19 @@
 # Take a look at how odds and index predictions shape up against actual recored points.
 # Odds is approx 60% accurate, index approx 50%
 
-fpl_performance_comparison <- function(players = player_details, gw_x = 8) {
+fpl_performance_comparison <- function(players = player_details, gw_x = 20) {
 
   gw <- paste0("gw", gw_x)
 
   # Prep
   gameweek <- fpl_get_gameweek_next()$id
+
+  #player_details <- player_details %>%
+  #  mutate()
+
+
+
+
 
   # Populate list of past gameweeks
   gameweeks <- list()
@@ -35,10 +42,14 @@ fpl_performance_comparison <- function(players = player_details, gw_x = 8) {
 
   for (i in 1:length(gameweeks)) {
     temp <- players %>%
-      group_by(playername) %>%
-      filter(fixture <= i * 10 & fixture > (i * 10) - 10) %>%
+      filter(round == i) %>%
+      #filter(fixture <= i * 10 & fixture > (i * 10) - 10) %>%
       mutate(was_home = as.numeric(was_home)) %>%
+      mutate(ict_index = as.numeric(ict_index)) %>%
       select(name = playername, minutes, element, total_points, ict_index) %>%
+      group_by(name) %>%
+      mutate(total_points = sum(total_points), ict_index = sum(ict_index)) %>%
+      distinct() %>%
       ungroup()
 
     # Assignment - Might need this later
@@ -70,6 +81,7 @@ fpl_performance_comparison <- function(players = player_details, gw_x = 8) {
 
   } else if (gw_x >= 8) {
     gameweek_players_xp <- read.csv(filename3) %>%
+      mutate(name = str_convert(name)) %>%
       full_join(gameweek, by = "name") %>%
       select(-ict_index) %>%
       filter(!is.na(total_points) & !is.na(xP_index))
